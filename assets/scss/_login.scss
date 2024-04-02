@@ -1,0 +1,131 @@
+.login {
+  padding-bottom: 7.25rem;
+  position: relative;
+}
+.login-bg {
+  background: #f9f9f9;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+}
+.login-container {
+  @include flex(start, space-between);
+  padding-top: 10rem;
+  position: relative;
+  z-index: 2;
+  min-height: 42rem;
+  gap: 3rem;
+}
+.login-wrapper {
+  max-width: 438px;
+  width: 100%;
+  h2 {
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 2.375rem;
+    text-align: center;
+  }
+  p {
+    font-size: 0.875rem;
+    text-align: center;
+    a {
+      font-weight: 700;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.main-form {
+  &.login-form {
+    margin-bottom: 20px;
+    .main-form-control {
+      border-radius: 500px;
+      &::placeholder {
+        color: #6f6f6f;
+      }
+    }
+    button[type="submit"] {
+      width: 100%;
+      background-color: #ecf107;
+      color: black;
+      font-size: 0.875rem;
+      padding: 18px;
+      &:hover {
+        background-color: #ffe502;
+      }
+    }
+  }
+  &.register-form {
+    .main-form-control {
+      background: transparent;
+    }
+    button[type="submit"] {
+      margin-top: 50px;
+    }
+  }
+}
+.login-other-item {
+  background: white;
+  width: 100%;
+  margin-bottom: 20px;
+  @include flex(center, center);
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 500px;
+  overflow: hidden;
+  border: 1px solid #e9ede9;
+  height: 54px;
+  img,
+  svg {
+    max-width: 36px;
+    max-height: 36px;
+  }
+  &:hover {
+    border-color: black;
+  }
+}
+.register {
+  padding-top: 10.4375rem;
+  padding-bottom: 12.5rem;
+  h1 {
+    font-weight: 800;
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 2.75rem;
+  }
+}
+.register-form {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+@include tablet {
+  .login {
+    padding-bottom: 4rem;
+  }
+  .login-container {
+    padding-top: 5rem;
+    min-height: 32rem;
+  }
+  .register {
+    padding: 5rem 0;
+  }
+}
+@include landscape-phone {
+  .login-bg {
+    height: 38%;
+    bottom: 2rem;
+    top: auto;
+    width: 100%;
+  }
+  .login-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

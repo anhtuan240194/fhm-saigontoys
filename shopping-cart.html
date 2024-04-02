@@ -1,0 +1,2585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping cart</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- START HEADER -->
+    <header class="header">
+      <div class="header-topbar bg-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-12">
+              <div class="header-topbar-group">
+                <div class="header-topbar-el">
+                  <div class="header-topbar-icon">
+                    <img
+                      src="assets/images/topbar-icon-1.svg"
+                      alt="phone"
+                      title="phone"
+                    />
+                  </div>
+                  <a href="tel:+84961691523" title="+84 961 691 523"
+                    >+84 961 691 523</a
+                  >
+                </div>
+                <div class="header-topbar-el">
+                  <div class="header-topbar-icon">
+                    <img src="assets/images/topbar-icon-2.svg" alt="mail" />
+                  </div>
+                  <a
+                    href="mailto:support@saigontoys.com.vn"
+                    title="support@saigontoys.com.vn"
+                    >support@saigontoys.com.vn</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-12">
+              <div class="header-topbar-main">
+                <p>
+                  Free Shipping for order above $500.
+                  <a href="#" title="Shop now!">Shop now</a>!
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-12">
+              <div class="header-topbar-group">
+                <div class="header-topbar-el">
+                  <div class="header-topbar-icon">
+                    <img
+                      src="assets/images/topbar-icon-3.svg"
+                      alt="Track Your Order"
+                      title="Track Your Order"
+                    />
+                  </div>
+                  <a href="#" title="Track Your Order">Track Your Order</a>
+                </div>
+                <div class="header-topbar-el">
+                  <div class="header-topbar-icon">
+                    <img
+                      src="assets/images/topbar-icon-4.svg"
+                      alt="Help/Support"
+                      title="Help/Support"
+                    />
+                  </div>
+                  <a href="#" title="Help/Support">Help/Support</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-main bg-black">
+        <div class="container">
+          <div class="header-main-container row">
+            <div class="col-4">
+              <form class="header-search">
+                <input type="search" placeholder="Enter Products..." />
+                <button type="submit">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.5683 17.6812L14.5058 13.6187H14.462C15.7142 12.1423 16.347 10.2389 16.228 8.30663C16.109 6.37439 15.2475 4.563 13.8237 3.25137C12.3998 1.93973 10.5239 1.22947 8.58845 1.26916C6.65296 1.30884 4.80778 2.09539 3.43889 3.46428C2.07 4.83317 1.28345 6.67835 1.24377 8.61384C1.20408 10.5493 1.91434 12.4252 3.22597 13.8491C4.53761 15.2729 6.349 16.1344 8.28124 16.2534C10.2135 16.3724 12.1169 15.7396 13.5933 14.4874C13.5933 14.4874 13.5933 14.5187 13.5933 14.5312L17.6558 18.5937C17.7139 18.6523 17.783 18.6988 17.8592 18.7305C17.9353 18.7622 18.017 18.7786 18.0995 18.7786C18.1821 18.7786 18.2637 18.7622 18.3399 18.7305C18.4161 18.6988 18.4852 18.6523 18.5433 18.5937C18.6074 18.537 18.6591 18.4677 18.6953 18.3901C18.7315 18.3126 18.7514 18.2284 18.7537 18.1429C18.7561 18.0573 18.7408 17.9722 18.7089 17.8928C18.677 17.8134 18.6292 17.7413 18.5683 17.6812ZM8.74955 14.9999C7.51341 14.9999 6.30504 14.6334 5.27723 13.9466C4.24942 13.2599 3.44835 12.2837 2.9753 11.1417C2.50225 9.99967 2.37848 8.743 2.61964 7.53062C2.8608 6.31824 3.45605 5.2046 4.33013 4.33052C5.20421 3.45644 6.31785 2.86119 7.53023 2.62003C8.74261 2.37887 9.99928 2.50264 11.1413 2.97569C12.2834 3.44874 13.2595 4.24982 13.9462 5.27762C14.633 6.30543 14.9995 7.5138 14.9995 8.74994C14.9995 9.5707 14.8379 10.3834 14.5238 11.1417C14.2097 11.9 13.7493 12.589 13.169 13.1694C12.5886 13.7497 11.8996 14.2101 11.1413 14.5242C10.383 14.8383 9.57031 14.9999 8.74955 14.9999Z"
+                      fill="black"
+                    />
+                  </svg>
+                </button>
+              </form>
+              <div
+                class="show-menu-mobile"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#menumobile"
+                aria-controls="menumobile"
+              >
+                <svg
+                  width="18"
+                  height="14"
+                  viewBox="0 0 18 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="18" height="2" fill="white" />
+                  <rect y="6" width="18" height="2" fill="white" />
+                  <rect y="12" width="18" height="2" fill="white" />
+                </svg>
+              </div>
+            </div>
+            <div class="col-4">
+              <a href="homepage.html" class="header-logo" title="saigontoys">
+                <img
+                  src="assets/images/logo.png"
+                  alt="saigontoys"
+                  title="saigontoys"
+                />
+              </a>
+            </div>
+            <div class="col-4">
+              <div class="header-action">
+                <a
+                  href="login.html"
+                  title="login"
+                  class="header-action-el header-login"
+                >
+                  <img src="assets/images/header-action-1.svg" alt="" />
+                </a>
+                <a
+                  href="wishlist.html"
+                  title="wishlist"
+                  class="header-action-el"
+                >
+                  <img src="assets/images/header-action-2.svg" alt="" />
+                </a>
+                <a
+                  href="shopping-cart.html"
+                  title="cart"
+                  class="header-action-el"
+                >
+                  <img src="assets/images/header-action-3.svg" alt="" />
+                  <span class="header-action-count">5</span>
+                </a>
+              </div>
+              <div class="language language-header">
+                <div class="language-icon">
+                  <img src="assets/images/flag.png" alt="EN" title="EN" />
+                </div>
+                <select name="lang">
+                  <option value="EN">EN</option>
+                  <option value="VI">VI</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="header-nav bg-yellow-primary">
+        <div class="container">
+          <div class="header-nav-container">
+            <div class="header-nav-menu">
+              <svg
+                width="17"
+                height="13"
+                viewBox="0 0 17 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect y="0.5" width="17" height="2" fill="black" />
+                <rect y="5.5" width="17" height="2" fill="black" />
+                <rect y="10.5" width="17" height="2" fill="black" />
+              </svg>
+              <div class="menu-lv1-wrapper">
+                <h3>All Categories</h3>
+                <ul class="menu-lv1">
+                  <li class="header-nav-item menu-lv1-item">
+                    <a href="#" title="link" class="header-nav-link"
+                      >Diorama & Figure</a
+                    >
+                  </li>
+                  <li class="header-nav-item menu-lv1-item">
+                    <a href="#" title="link" class="header-nav-link"
+                      >Hot Wheels</a
+                    >
+                  </li>
+                  <li class="header-nav-item menu-lv1-item">
+                    <a href="#" title="link" class="header-nav-link">Inno64</a>
+                  </li>
+                  <li class="header-nav-item menu-lv1-item">
+                    <a href="#" title="link" class="header-nav-link"
+                      >PopRace Diecast</a
+                    >
+                  </li>
+                  <li class="header-nav-item menu-lv1-item">
+                    <a href="#" title="link" class="header-nav-link"
+                      >Saigontoys Gift</a
+                    >
+                    <div class="menu-lv2-wrapper">
+                      <h3>Saigontoys Gift</h3>
+                      <a
+                        href="#"
+                        title="link"
+                        class="header-nav-link header-nav-link-all"
+                        >Shop All</a
+                      >
+                      <ul class="menu-lv2">
+                        <li class="header-nav-item menu-lv2-item">
+                          <a href="#" title="link" class="header-nav-link"
+                            >Kaido House</a
+                          >
+                        </li>
+                        <li class="header-nav-item menu-lv2-item">
+                          <a href="#" title="link" class="header-nav-link"
+                            >Mini GT Box Version</a
+                          >
+                        </li>
+                        <li class="header-nav-item menu-lv2-item">
+                          <a href="#" title="link" class="header-nav-link"
+                            >Mini GT Card Version</a
+                          >
+                        </li>
+                        <li class="header-nav-item menu-lv2-item">
+                          <a href="#" title="link" class="header-nav-link"
+                            >Phụ kiện chính hãng MiniGT</a
+                          >
+                        </li>
+                        <li class="header-nav-item menu-lv2-item">
+                          <a href="#" title="link" class="header-nav-link"
+                            >Kaido House</a
+                          >
+                        </li>
+                        <li class="header-nav-item menu-lv2-item">
+                          <a href="#" title="link" class="header-nav-link"
+                            >Mini GT Box Version</a
+                          >
+                        </li>
+                        <li class="header-nav-item menu-lv2-item">
+                          <a href="#" title="link" class="header-nav-link"
+                            >Mini GT Card Version</a
+                          >
+                        </li>
+                        <li class="header-nav-item menu-lv2-item">
+                          <a href="#" title="link" class="header-nav-link"
+                            >Phụ kiện chính hãng MiniGT</a
+                          >
+                        </li>
+                        <li class="header-nav-item menu-lv2-item">
+                          <a href="#" title="link" class="header-nav-link"
+                            >Kaido House</a
+                          >
+                        </li>
+                        <li class="header-nav-item menu-lv2-item">
+                          <a href="#" title="link" class="header-nav-link"
+                            >Mini GT Box Version</a
+                          >
+                        </li>
+                        <li class="header-nav-item menu-lv2-item">
+                          <a href="#" title="link" class="header-nav-link"
+                            >Mini GT Card Version</a
+                          >
+                        </li>
+                        <li class="header-nav-item menu-lv2-item">
+                          <a href="#" title="link" class="header-nav-link"
+                            >Kaido House</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="header-nav-item menu-lv1-item">
+                    <a href="#" title="link" class="header-nav-link">Mini GT</a>
+                  </li>
+                  <li class="header-nav-item menu-lv1-item">
+                    <a href="#" title="link" class="header-nav-link"
+                      >PosterCars</a
+                    >
+                  </li>
+                  <li class="header-nav-item menu-lv1-item">
+                    <a href="#" title="link" class="header-nav-link"
+                      >Phụ kiện 1:64</a
+                    >
+                  </li>
+                  <li class="header-nav-item menu-lv1-item">
+                    <a href="#" title="link" class="header-nav-link"
+                      >Tarmarc Works</a
+                    >
+                  </li>
+                  <li class="header-nav-item menu-lv1-item">
+                    <a href="#" title="link" class="header-nav-link"
+                      >OTHER BRAND</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <ul class="header-nav-list">
+              <li class="header-nav-item">
+                <a href="#" class="header-nav-link" title="link"
+                  >Toys & Accessories</a
+                >
+                <div class="mega">
+                  <div class="container">
+                    <div class="mega-main">
+                      <div class="mega-list">
+                        <div class="mega-col">
+                          <a href="#" class="header-nav-link-parent" title=""
+                            >Diorama & Figure</a
+                          >
+                          <ul>
+                            <li>
+                              <a href="#" class="header-nav-link" title="link"
+                                >Diorama</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#" class="header-nav-link" title="link"
+                                >Figure</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="header-nav-link header-nav-link-all"
+                                >View All Diorama & Figure</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="mega-col">
+                          <a href="#" class="header-nav-link-parent" title="all"
+                            >Hot Wheels</a
+                          >
+                          <ul>
+                            <li>
+                              <a href="#" class="header-nav-link" title="link"
+                                >Hot Wheels Basic</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#" class="header-nav-link" title="link"
+                                >Hot Wheels ID</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#" class="header-nav-link" title="link"
+                                >Hot Wheels Premium</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#" class="header-nav-link" title="link"
+                                >Hot Wheels RLC</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#" class="header-nav-link" title="link"
+                                >Hot Wheels Semi Premium</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#" class="header-nav-link" title="link"
+                                >Team Transport</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="header-nav-link header-nav-link-all"
+                                title="all"
+                                >View All Hot Wheels</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="mega-col">
+                          <a href="#" class="header-nav-link-parent" title="all"
+                            >Inno64</a
+                          >
+                          <ul>
+                            <li>
+                              <a
+                                href="#"
+                                class="header-nav-link header-nav-link-all"
+                                title="all"
+                                >View All Inno64</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="mega-col">
+                          <a href="#" class="header-nav-link-parent" title="all"
+                            >PopRace Diecast</a
+                          >
+                          <ul>
+                            <li>
+                              <a href="#" class="header-nav-link" title="link"
+                                >Wall décor</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#" class="header-nav-link" title="link"
+                                >Plants & flowers</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#" class="header-nav-link" title="link"
+                                >Storage boxes & baskets</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#" class="header-nav-link" title="link"
+                                >Vases & bowls</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="header-nav-link header-nav-link-all"
+                                title="all"
+                                >View All PopRace Diecast</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="mega-col">
+                          <a href="#" class="header-nav-link-parent" title="AlL"
+                            >Saigontoys Gift</a
+                          >
+                          <ul>
+                            <li>
+                              <a href="#" class="header-nav-link" title="link"
+                                >Kaido House</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#" class="header-nav-link" title="link"
+                                >Mini GT Box Version</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#" class="header-nav-link" title="link"
+                                >Mini GT Card Version</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#" class="header-nav-link" title="link"
+                                >Phụ kiện chính hãng MiniGT</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="header-nav-link header-nav-link-all"
+                                title="all"
+                                >VView All Saigontoys Gift</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="mega-col">
+                          <a href="#" class="header-nav-link-parent" title="AlL"
+                            >Accessories</a
+                          >
+                          <ul>
+                            <li>
+                              <a href="#" class="header-nav-link" title="link"
+                                >Kaido House</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#" class="header-nav-link" title="link"
+                                >Mini GT Box Version</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#" class="header-nav-link" title="link"
+                                >Mini GT Card Version</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#" class="header-nav-link" title="link"
+                                >Vases & bowls</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="#"
+                                class="header-nav-link header-nav-link-all"
+                                title="all"
+                                >View All Accessories</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="mega-side">
+                        <div class="mega-image">
+                          <img
+                            src="./assets/images/mega.png"
+                            alt="saigontoys"
+                          />
+                        </div>
+                        <a href="#" title="Shop Now"
+                          ><span>Shop Now</span
+                          ><svg
+                            width="16"
+                            height="8"
+                            viewBox="0 0 16 8"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_48_13374)">
+                              <path
+                                d="M11.937 7.99984C11.6858 7.88884 11.5797 7.75851 11.6323 7.56738C11.6617 7.46044 11.7406 7.35661 11.8217 7.27523C12.547 6.54688 13.2775 5.82383 14.0069 5.09954C14.2426 4.86569 14.4797 4.63309 14.7546 4.36183H14.5239C9.936 4.36183 5.34847 4.36183 0.760624 4.36183C0.641004 4.36183 0.52107 4.36557 0.40145 4.3609C0.16127 4.35092 -0.000624474 4.20032 1.81067e-06 3.99392C0.000628095 3.79437 0.155007 3.6472 0.387672 3.62787C0.43934 3.62351 0.491635 3.62631 0.54393 3.62631C5.19941 3.62631 9.8549 3.62631 14.5101 3.62631H14.7387C14.672 3.55585 14.6319 3.51095 14.5893 3.46886C13.6546 2.53878 12.7198 1.60901 11.7851 0.678615C11.6004 0.494969 11.5703 0.30571 11.6962 0.14233C11.8183 -0.016061 12.0328 -0.0472403 12.1934 0.0728002C12.2432 0.109904 12.289 0.152931 12.3331 0.196582C13.4936 1.34866 14.6541 2.50074 15.8124 3.655C15.8848 3.72702 15.938 3.81775 16 3.89975V4.08621C15.9264 4.17912 15.8616 4.28045 15.7783 4.3637C14.6422 5.49676 13.5046 6.62795 12.3635 7.75602C12.2667 7.85143 12.1424 7.91909 12.0309 7.99953H11.9373L11.937 7.99984Z"
+                                fill="black"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_48_13374">
+                                <rect width="16" height="8" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="header-nav-item">
+                <a href="#" class="header-nav-link" title="link">Car Brands</a>
+                <div class="mega">
+                  <div class="container">
+                    <div class="mega-main mega-main-brand">
+                      <div class="mega-brand">
+                        <h3 class="header-nav-link-parent">Hot Brands</h3>
+                        <div class="mega-row">
+                          <div class="mega-brand-item">
+                            <img
+                              src="assets/images/mega-brand-1.png"
+                              alt="brand"
+                              title="brand"
+                            />
+                          </div>
+                          <div class="mega-brand-item">
+                            <img
+                              src="assets/images/mega-brand-2.png"
+                              alt="brand"
+                              title="brand"
+                            />
+                          </div>
+                          <div class="mega-brand-item">
+                            <img
+                              src="assets/images/mega-brand-3.png"
+                              alt="brand"
+                              title="brand"
+                            />
+                          </div>
+                          <div class="mega-brand-item">
+                            <img
+                              src="assets/images/mega-brand-4.png"
+                              alt="brand"
+                              title="brand"
+                            />
+                          </div>
+                          <div class="mega-brand-item">
+                            <img
+                              src="assets/images/mega-brand-5.png"
+                              alt="brand"
+                              title="brand"
+                            />
+                          </div>
+                          <div class="mega-brand-item">
+                            <img
+                              src="assets/images/mega-brand-1.png"
+                              alt="brand"
+                              title="brand"
+                            />
+                          </div>
+                          <div class="mega-brand-item">
+                            <img
+                              src="assets/images/mega-brand-1.png"
+                              alt="brand"
+                              title="brand"
+                            />
+                          </div>
+                          <div class="mega-brand-item">
+                            <img
+                              src="assets/images/mega-brand-1.png"
+                              alt="brand"
+                              title="brand"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mega-other">
+                        <h3 class="header-nav-link-parent">Hot Brands</h3>
+                        <div class="mega-other-list">
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                          <a href="#" class="header-nav-link" title="link"
+                            >Auto World</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="header-nav-item">
+                <a class="header-nav-link" href="#">Promotions</a>
+              </li>
+              <li class="header-nav-item">
+                <a class="header-nav-link" href="#">About</a>
+              </li>
+              <li class="header-nav-item">
+                <a class="header-nav-link" href="blog.html">Diecast Blog</a>
+              </li>
+              <li class="header-nav-item">
+                <a class="header-nav-link" href="#">Policy</a>
+              </li>
+              <li class="header-nav-item">
+                <a class="header-nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="menumobile"
+        aria-labelledby="menumobileLabel"
+      >
+        <div class="offcanvas-body">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+
+          <div class="mobile-row">
+            <a href="login.html" title="login" class="mobile-login">
+              <svg
+                width="19"
+                height="18"
+                viewBox="0 0 19 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.0136 17.9537C9.57237 17.9537 9.13113 17.9537 8.6943 17.9537C8.4472 17.9184 8.20011 17.8919 7.95742 17.8522C5.7821 17.4815 3.92447 16.502 2.52573 14.7899C0.209204 11.9528 -0.293812 8.7714 1.1314 5.40472C2.8346 1.385 7.05729 -0.706493 11.3241 0.215704C14.7437 0.952579 17.5191 3.79418 18.159 7.21381C18.2251 7.58004 18.2781 7.95069 18.3354 8.31692C18.3354 8.75816 18.3354 9.1994 18.3354 9.63623C18.3001 9.88333 18.2737 10.1304 18.234 10.3731C17.8589 12.5749 16.8352 14.4061 15.132 15.8533C14.0289 16.7888 12.767 17.4198 11.355 17.7286C10.9137 17.8257 10.4593 17.8786 10.0136 17.9537ZM7.07935 11.6439C4.8952 10.0951 4.80695 7.20499 6.38219 5.51062C7.90448 3.87361 10.4946 3.77653 12.1316 5.31647C12.9082 6.04452 13.3406 6.95348 13.3979 8.01687C13.4774 9.53033 12.8552 10.7261 11.6286 11.6395C13.1067 12.1778 14.2628 13.0956 15.1232 14.384C18.0001 11.3615 18.0884 6.34015 14.7879 3.21615C11.5183 0.118631 6.28953 0.356902 3.31996 3.85154C0.496012 7.1741 1.0608 11.8292 3.59353 14.3796C4.01272 13.7486 4.51132 13.1971 5.10258 12.7338C5.69826 12.266 6.3513 11.9086 7.07935 11.6439ZM4.38336 15.1076C7.19849 17.5212 11.6594 17.4374 14.3246 15.0988C13.1111 13.2721 11.4212 12.2837 9.21496 12.3278C7.12789 12.3763 5.52618 13.3647 4.38336 15.1076ZM12.3478 8.26838C12.3478 6.62255 10.9932 5.27234 9.35175 5.27234C7.71474 5.27676 6.36895 6.61813 6.36454 8.25514C6.35571 9.89657 7.71033 11.2556 9.35175 11.26C10.9888 11.2688 12.3478 9.91422 12.3478 8.26838Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+            <form class="mobile-search">
+              <input type="text" placeholder="search" name="search" />
+            </form>
+          </div>
+          <nav class="nav-mobile">
+            <ul class="nav-list">
+              <li>
+                <a href="#" title="link">Diorama & Figure</a>
+              </li>
+
+              <li>
+                <a href="#" title="link">Hot Wheels</a>
+              </li>
+              <li><a href="#">Inno64</a></li>
+              <li><a href="#">PopRace Diecast</a></li>
+              <li>
+                <a href="#">Saigontoys Gift</a>
+
+                <ul class="nav-list-lv0 collapse" id="collapsesubmenu-1">
+                  <li class="position-relative">
+                    <a href="#" title="link">Kaido House</a>
+                    <ul
+                      class="nav-list-lv1 collapse"
+                      id="collapsesubmenu-lv1-1"
+                    >
+                      <li>
+                        <a href="#" title="link">Culotte dress</a>
+                      </li>
+                      <li>
+                        <a href="#" title="link">Babydoll dress</a>
+                      </li>
+                      <li>
+                        <a href="#" title="link">Wrap around dress</a>
+                      </li>
+                      <li>
+                        <a href="#" title="link">Kimono dress</a>
+                      </li>
+                      <li>
+                        <a href="#" title="link">Bubble dress</a>
+                      </li>
+                      <li>
+                        <a href="#" title="link">Tutu dress</a>
+                      </li>
+                    </ul>
+
+                    <div
+                      class="close-sub-nav collapsed"
+                      data-bs-toggle="collapse"
+                      href="#collapsesubmenu-lv1-1"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapsesubmenulv1-1"
+                    >
+                      <svg
+                        version="1.1"
+                        id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 512 512"
+                        style="enable-background: new 0 0 512 512"
+                        xml:space="preserve"
+                      >
+                        <g>
+                          <g>
+                            <path
+                              d="M492,236H276V20c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20s8.954,20,20,20h216			v216c0,11.046,8.954,20,20,20s20-8.954,20-20V276h216c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z"
+                            />
+                          </g>
+                        </g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                      </svg>
+
+                      <svg
+                        id="svg1591"
+                        height="24"
+                        viewBox="0 0 6.3499999 6.3500002"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:svg="http://www.w3.org/2000/svg"
+                      >
+                        <g id="layer1" transform="translate(0 -290.65)">
+                          <path
+                            id="path2047"
+                            d="m.79427278 293.56039a.2646485.2646485 0 0 0 0 .52917h4.76146822a.2646485.2646485 0 0 0 0-.52917z"
+                            font-variant-ligatures="normal"
+                            font-variant-position="normal"
+                            font-variant-caps="normal"
+                            font-variant-numeric="normal"
+                            font-variant-alternates="normal"
+                            font-feature-settings="normal"
+                            text-indent="0"
+                            text-align="start"
+                            text-decoration-line="none"
+                            text-decoration-style="solid"
+                            text-decoration-color="rgb(0,0,0)"
+                            text-transform="none"
+                            text-orientation="mixed"
+                            white-space="normal"
+                            shape-padding="0"
+                            isolation="auto"
+                            mix-blend-mode="normal"
+                            solid-color="rgb(0,0,0)"
+                            solid-opacity="1"
+                            vector-effect="none"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </li>
+
+                  <li class="position-relative">
+                    <a href="#" title="link">Mini GT Box Version</a>
+                    <ul
+                      class="nav-list-lv1 collapse"
+                      id="collapsesubmenu-lv1-2"
+                    >
+                      <li>
+                        <a href="#" title="link">Suit</a>
+                      </li>
+                      <li>
+                        <a href="#" title="link">Hawaiian shirt</a>
+                      </li>
+                      <li>
+                        <a href="#" title="link">Singlet</a>
+                      </li>
+                      <li>
+                        <a href="#" title="link">Business shoes</a>
+                      </li>
+                      <li>
+                        <a href="#" title="link">Flip flops</a>
+                      </li>
+                      <li>
+                        <a href="#" title="link">Shorts</a>
+                      </li>
+                    </ul>
+
+                    <div
+                      class="close-sub-nav collapsed"
+                      data-bs-toggle="collapse"
+                      href="#collapsesubmenu-lv1-2"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapsesubmenu-lv1-2"
+                    >
+                      <svg
+                        version="1.1"
+                        id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 512 512"
+                        style="enable-background: new 0 0 512 512"
+                        xml:space="preserve"
+                      >
+                        <g>
+                          <g>
+                            <path
+                              d="M492,236H276V20c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20s8.954,20,20,20h216			v216c0,11.046,8.954,20,20,20s20-8.954,20-20V276h216c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z"
+                            />
+                          </g>
+                        </g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                      </svg>
+
+                      <svg
+                        id="svg1591"
+                        height="24"
+                        viewBox="0 0 6.3499999 6.3500002"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:svg="http://www.w3.org/2000/svg"
+                      >
+                        <g id="layer1" transform="translate(0 -290.65)">
+                          <path
+                            id="path2047"
+                            d="m.79427278 293.56039a.2646485.2646485 0 0 0 0 .52917h4.76146822a.2646485.2646485 0 0 0 0-.52917z"
+                            font-variant-ligatures="normal"
+                            font-variant-position="normal"
+                            font-variant-caps="normal"
+                            font-variant-numeric="normal"
+                            font-variant-alternates="normal"
+                            font-feature-settings="normal"
+                            text-indent="0"
+                            text-align="start"
+                            text-decoration-line="none"
+                            text-decoration-style="solid"
+                            text-decoration-color="rgb(0,0,0)"
+                            text-transform="none"
+                            text-orientation="mixed"
+                            white-space="normal"
+                            shape-padding="0"
+                            isolation="auto"
+                            mix-blend-mode="normal"
+                            solid-color="rgb(0,0,0)"
+                            solid-opacity="1"
+                            vector-effect="none"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </li>
+                  <li class="position-relative">
+                    <a href="#" title="link">Mini GT Card Version</a>
+                    <ul
+                      class="nav-list-lv1 collapse"
+                      id="collapsesubmenu-lv1-3"
+                    >
+                      <li>
+                        <a href="#" title="link">Sunglasses</a>
+                      </li>
+                      <li>
+                        <a href="#" title="link">Scarves</a>
+                      </li>
+                      <li>
+                        <a href="#" title="link">Belts</a>
+                      </li>
+                      <li>
+                        <a href="#" title="link">Shoes</a>
+                      </li>
+                    </ul>
+
+                    <div
+                      class="close-sub-nav collapsed"
+                      data-bs-toggle="collapse"
+                      href="#collapsesubmenu-lv1-3"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapsesubmenu-lv1-3"
+                    >
+                      <svg
+                        version="1.1"
+                        id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 512 512"
+                        style="enable-background: new 0 0 512 512"
+                        xml:space="preserve"
+                      >
+                        <g>
+                          <g>
+                            <path
+                              d="M492,236H276V20c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20s8.954,20,20,20h216			v216c0,11.046,8.954,20,20,20s20-8.954,20-20V276h216c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z"
+                            />
+                          </g>
+                        </g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                      </svg>
+
+                      <svg
+                        id="svg1591"
+                        height="24"
+                        viewBox="0 0 6.3499999 6.3500002"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:svg="http://www.w3.org/2000/svg"
+                      >
+                        <g id="layer1" transform="translate(0 -290.65)">
+                          <path
+                            id="path2047"
+                            d="m.79427278 293.56039a.2646485.2646485 0 0 0 0 .52917h4.76146822a.2646485.2646485 0 0 0 0-.52917z"
+                            font-variant-ligatures="normal"
+                            font-variant-position="normal"
+                            font-variant-caps="normal"
+                            font-variant-numeric="normal"
+                            font-variant-alternates="normal"
+                            font-feature-settings="normal"
+                            text-indent="0"
+                            text-align="start"
+                            text-decoration-line="none"
+                            text-decoration-style="solid"
+                            text-decoration-color="rgb(0,0,0)"
+                            text-transform="none"
+                            text-orientation="mixed"
+                            white-space="normal"
+                            shape-padding="0"
+                            isolation="auto"
+                            mix-blend-mode="normal"
+                            solid-color="rgb(0,0,0)"
+                            solid-opacity="1"
+                            vector-effect="none"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </li>
+                  <li class="position-relative">
+                    <a href="#" title="link">Phụ kiện chính hãng MiniGT</a>
+                    <ul
+                      class="nav-list-lv1 collapse"
+                      id="collapsesubmenu-lv1-4"
+                    >
+                      <li>
+                        <a href="#" title="link">Aqua Apparel</a>
+                      </li>
+                      <li>
+                        <a href="#" title="link">Go Exotic Swimwear</a>
+                      </li>
+                      <li>
+                        <a href="#" title="link">Surf Goddess</a>
+                      </li>
+                    </ul>
+
+                    <div
+                      class="close-sub-nav collapsed"
+                      data-bs-toggle="collapse"
+                      href="#collapsesubmenu-lv1-4"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapsesubmenu-lv1-4"
+                    >
+                      <svg
+                        version="1.1"
+                        id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 512 512"
+                        style="enable-background: new 0 0 512 512"
+                        xml:space="preserve"
+                      >
+                        <g>
+                          <g>
+                            <path
+                              d="M492,236H276V20c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20s8.954,20,20,20h216			v216c0,11.046,8.954,20,20,20s20-8.954,20-20V276h216c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z"
+                            />
+                          </g>
+                        </g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                      </svg>
+
+                      <svg
+                        id="svg1591"
+                        height="24"
+                        viewBox="0 0 6.3499999 6.3500002"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:svg="http://www.w3.org/2000/svg"
+                      >
+                        <g id="layer1" transform="translate(0 -290.65)">
+                          <path
+                            id="path2047"
+                            d="m.79427278 293.56039a.2646485.2646485 0 0 0 0 .52917h4.76146822a.2646485.2646485 0 0 0 0-.52917z"
+                            font-variant-ligatures="normal"
+                            font-variant-position="normal"
+                            font-variant-caps="normal"
+                            font-variant-numeric="normal"
+                            font-variant-alternates="normal"
+                            font-feature-settings="normal"
+                            text-indent="0"
+                            text-align="start"
+                            text-decoration-line="none"
+                            text-decoration-style="solid"
+                            text-decoration-color="rgb(0,0,0)"
+                            text-transform="none"
+                            text-orientation="mixed"
+                            white-space="normal"
+                            shape-padding="0"
+                            isolation="auto"
+                            mix-blend-mode="normal"
+                            solid-color="rgb(0,0,0)"
+                            solid-opacity="1"
+                            vector-effect="none"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </li>
+                  <li class="position-relative">
+                    <a href="#" title="link">Kaido House</a>
+                    <ul
+                      class="nav-list-lv1 collapse"
+                      id="collapsesubmenu-lv1-5"
+                    >
+                      <li>
+                        <a href="#" title="link">Tiffany & Co</a>
+                      </li>
+                      <li>
+                        <a href="#" title="link">Zara</a>
+                      </li>
+                      <li>
+                        <a href="#" title="link">H&M</a>
+                      </li>
+                      <li>
+                        <a href="#" title="link">Cartier</a>
+                      </li>
+                      <li>
+                        <a href="#" title="link">Lululemon</a>
+                      </li>
+                    </ul>
+
+                    <div
+                      class="close-sub-nav collapsed"
+                      data-bs-toggle="collapse"
+                      href="#collapsesubmenu-lv1-5"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapsesubmenu-lv1-5"
+                    >
+                      <svg
+                        version="1.1"
+                        id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 512 512"
+                        style="enable-background: new 0 0 512 512"
+                        xml:space="preserve"
+                      >
+                        <g>
+                          <g>
+                            <path
+                              d="M492,236H276V20c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20s8.954,20,20,20h216			v216c0,11.046,8.954,20,20,20s20-8.954,20-20V276h216c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z"
+                            />
+                          </g>
+                        </g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                      </svg>
+
+                      <svg
+                        id="svg1591"
+                        height="24"
+                        viewBox="0 0 6.3499999 6.3500002"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:svg="http://www.w3.org/2000/svg"
+                      >
+                        <g id="layer1" transform="translate(0 -290.65)">
+                          <path
+                            id="path2047"
+                            d="m.79427278 293.56039a.2646485.2646485 0 0 0 0 .52917h4.76146822a.2646485.2646485 0 0 0 0-.52917z"
+                            font-variant-ligatures="normal"
+                            font-variant-position="normal"
+                            font-variant-caps="normal"
+                            font-variant-numeric="normal"
+                            font-variant-alternates="normal"
+                            font-feature-settings="normal"
+                            text-indent="0"
+                            text-align="start"
+                            text-decoration-line="none"
+                            text-decoration-style="solid"
+                            text-decoration-color="rgb(0,0,0)"
+                            text-transform="none"
+                            text-orientation="mixed"
+                            white-space="normal"
+                            shape-padding="0"
+                            isolation="auto"
+                            mix-blend-mode="normal"
+                            solid-color="rgb(0,0,0)"
+                            solid-opacity="1"
+                            vector-effect="none"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </li>
+                </ul>
+                <div
+                  class="close-sub-nav collapsed"
+                  data-bs-toggle="collapse"
+                  href="#collapsesubmenu-1"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapsesubmenu-1"
+                >
+                  <svg
+                    version="1.1"
+                    id="Capa_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 512 512"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <g>
+                        <path
+                          d="M492,236H276V20c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20s8.954,20,20,20h216			v216c0,11.046,8.954,20,20,20s20-8.954,20-20V276h216c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z"
+                        />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg>
+
+                  <svg
+                    id="svg1591"
+                    height="24"
+                    viewBox="0 0 6.3499999 6.3500002"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:svg="http://www.w3.org/2000/svg"
+                  >
+                    <g id="layer1" transform="translate(0 -290.65)">
+                      <path
+                        id="path2047"
+                        d="m.79427278 293.56039a.2646485.2646485 0 0 0 0 .52917h4.76146822a.2646485.2646485 0 0 0 0-.52917z"
+                        font-variant-ligatures="normal"
+                        font-variant-position="normal"
+                        font-variant-caps="normal"
+                        font-variant-numeric="normal"
+                        font-variant-alternates="normal"
+                        font-feature-settings="normal"
+                        text-indent="0"
+                        text-align="start"
+                        text-decoration-line="none"
+                        text-decoration-style="solid"
+                        text-decoration-color="rgb(0,0,0)"
+                        text-transform="none"
+                        text-orientation="mixed"
+                        white-space="normal"
+                        shape-padding="0"
+                        isolation="auto"
+                        mix-blend-mode="normal"
+                        solid-color="rgb(0,0,0)"
+                        solid-opacity="1"
+                        vector-effect="none"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </li>
+              <li><a href="#">Mini GT</a></li>
+              <li><a href="#">PosterCars</a></li>
+              <li>
+                <a href="#">Language</a>
+                <ul class="nav-list-lv0 collapse" id="collapsesubmenu-5">
+                  <li class="position-relative">
+                    <a href="#" title="link">Vietnamese</a>
+                  </li>
+
+                  <li class="position-relative">
+                    <a href="#" title="link">United State</a>
+                  </li>
+                </ul>
+                <div
+                  class="close-sub-nav collapsed"
+                  data-bs-toggle="collapse"
+                  href="#collapsesubmenu-5"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapsesubmenu-5"
+                >
+                  <svg
+                    version="1.1"
+                    id="Capa_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 512 512"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <g>
+                        <path
+                          d="M492,236H276V20c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20s8.954,20,20,20h216			v216c0,11.046,8.954,20,20,20s20-8.954,20-20V276h216c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z"
+                        />
+                      </g>
+                    </g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                  </svg>
+
+                  <svg
+                    id="svg1591"
+                    height="24"
+                    viewBox="0 0 6.3499999 6.3500002"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:svg="http://www.w3.org/2000/svg"
+                  >
+                    <g id="layer1" transform="translate(0 -290.65)">
+                      <path
+                        id="path2047"
+                        d="m.79427278 293.56039a.2646485.2646485 0 0 0 0 .52917h4.76146822a.2646485.2646485 0 0 0 0-.52917z"
+                        font-variant-ligatures="normal"
+                        font-variant-position="normal"
+                        font-variant-caps="normal"
+                        font-variant-numeric="normal"
+                        font-variant-alternates="normal"
+                        font-feature-settings="normal"
+                        text-indent="0"
+                        text-align="start"
+                        text-decoration-line="none"
+                        text-decoration-style="solid"
+                        text-decoration-color="rgb(0,0,0)"
+                        text-transform="none"
+                        text-orientation="mixed"
+                        white-space="normal"
+                        shape-padding="0"
+                        isolation="auto"
+                        mix-blend-mode="normal"
+                        solid-color="rgb(0,0,0)"
+                        solid-opacity="1"
+                        vector-effect="none"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER -->
+    <main>
+      <!-- START SHOPPING CART -->
+      <section class="shopping-cart">
+        <div class="container">
+          <div class="shopping-cart-heading position-relative">
+            <h1>Shopping Cart<span>(5)</span></h1>
+          </div>
+          <div class="row">
+            <div class="col-xl-8 col-lg-8">
+              <div class="shopping-cart-table position-relative">
+                <table class="table">
+                  <tbody>
+                    <tr class="cart-product">
+                      <td class="cart-checkbox">
+                        <div class="checkbox">
+                          <input
+                            type="checkbox"
+                            value="Bfgoodrich® 84194 - Advantage T/A Sport LT (255/50R20 109H)"
+                          />
+                          <span class="checkmark"
+                            ><svg
+                              width="12"
+                              height="9"
+                              viewBox="0 0 12 9"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_219_8160)">
+                                <path
+                                  d="M12.0004 0.56561C11.9177 0.67643 11.8477 0.800397 11.751 0.896191C9.21014 3.44004 6.66762 5.98248 4.12346 8.52351C4.03096 8.61601 3.93563 8.69842 3.79805 8.71486C3.61984 8.73622 3.48226 8.66626 3.35899 8.54276C2.29994 7.48199 1.2398 6.422 0.178559 5.36279C0.162124 5.34636 0.145454 5.32992 0.129958 5.31231C0.00552028 5.17144 -0.0343936 5.01085 0.0313469 4.83475C0.0970875 4.65866 0.229743 4.55841 0.415929 4.53423C0.476207 4.52661 0.53741 4.53166 0.595627 4.54904C0.653843 4.56642 0.707792 4.59576 0.754024 4.63519C0.792816 4.66783 0.82981 4.70255 0.864843 4.7392C1.7874 5.66082 2.70957 6.58275 3.63135 7.505C3.65944 7.53747 3.68496 7.57209 3.70765 7.60854L3.76118 7.62262C3.78795 7.58013 3.80814 7.53035 3.84266 7.4956C6.27725 5.0607 8.71247 2.62626 11.1483 0.192297C11.2497 0.0906339 11.3573 0.00634509 11.5101 0.0004754C11.7684 -0.00938568 11.9104 0.135009 12.0004 0.35477V0.56561Z"
+                                  fill="black"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_219_8160">
+                                  <rect
+                                    width="12"
+                                    height="8.71861"
+                                    fill="white"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                        </div>
+                      </td>
+                      <td class="cart-img">
+                        <img
+                          src="./assets/images/product1.png"
+                          title="Bfgoodrich® 84194 - Advantage T/A Sport LT (255/50R20 109H)"
+                          alt="Bfgoodrich® 84194 - Advantage T/A Sport LT (255/50R20 109H)"
+                        />
+                      </td>
+                      <td class="cart-info">
+                        <div class="cart-info-content">
+                          <a
+                            href="#"
+                            title="Bfgoodrich® 84194 - Advantage T/A Sport LT
+                          (255/50R20 109H)"
+                          >
+                            Bfgoodrich® 84194 - Advantage T/A Sport LT
+                            (255/50R20 109H)
+                          </a>
+                          <span>Season: All Season. Type: Truck / SUV</span>
+                        </div>
+                      </td>
+                      <td class="cart-quantity">
+                        <div class="cart-quantity-form">
+                          <input
+                            type="button"
+                            value="-"
+                            class="qtyminus minus"
+                          />
+                          <input
+                            type="text"
+                            name="quantity"
+                            value="0"
+                            class="qty"
+                          />
+                          <input type="button" value="+" class="qtyplus plus" />
+                        </div>
+                      </td>
+                      <td class="cart-price">
+                        <h4>$696,86</h4>
+                      </td>
+                      <td class="cart-delete">
+                        <button>
+                          <svg
+                            width="14"
+                            height="18"
+                            viewBox="0 0 14 18"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_219_8079)">
+                              <path
+                                d="M11.0736 17.2376H2.89471C2.65658 17.1475 2.39888 17.0902 2.18402 16.9617C1.46152 16.5299 1.14581 15.8611 1.14547 15.0337C1.14412 11.7934 1.14491 8.5529 1.14783 5.31234C1.14783 5.18147 1.11916 5.11637 0.985593 5.07286C0.730931 4.99022 0.526864 4.82562 0.351467 4.62121C0.163928 4.40197 0.0816268 4.13854 0 3.87207V3.39985C0.00742061 3.39175 0.020238 3.38467 0.0215872 3.37556C0.159206 2.60348 0.824026 2.05807 1.73777 2.08842C2.29803 2.10698 2.8593 2.0918 3.42023 2.0918H3.60541C3.60541 1.90696 3.60203 1.75011 3.60541 1.5936C3.62328 0.845808 4.06582 0.265988 4.78596 0.0636078C4.92613 0.0248213 5.07091 0.00519199 5.21635 0.00525478C6.40534 0.000532575 7.59466 0.00525476 8.78365 0.00154446C9.60936 -0.00385235 10.3147 0.637019 10.3706 1.43271C10.3858 1.64858 10.3949 1.86479 10.4077 2.09281C10.5005 2.09281 10.5838 2.09281 10.6671 2.09281C11.3286 2.10124 11.9914 2.08438 12.6508 2.12654C13.3409 2.16938 13.89 2.75021 13.9879 3.47001C14.0769 4.12673 13.6603 4.83371 13.0309 5.0651C12.891 5.11671 12.8505 5.17911 12.8508 5.32583C12.8555 8.51895 12.8567 11.7113 12.8542 14.9028C12.8542 14.9925 12.8566 15.0826 12.8508 15.1727C12.8056 15.8692 12.5351 16.448 11.9647 16.8713C11.6983 17.0676 11.389 17.1594 11.0736 17.2376ZM1.95263 5.18316V14.9335C1.95263 14.9784 1.95263 15.0232 1.95263 15.0684C1.98636 15.8833 2.48725 16.4274 3.22999 16.4288C5.74266 16.4333 8.25521 16.4333 10.7676 16.4288C11.2827 16.4288 11.6618 16.1849 11.8929 15.716C12.013 15.4718 12.0399 15.2125 12.0399 14.9487C12.0415 11.7569 12.0415 8.56516 12.0399 5.37339V5.18417L1.95263 5.18316ZM7.00203 4.35306H12.2842C12.357 4.35306 12.4302 4.35306 12.5027 4.34867C12.8434 4.32911 13.1271 4.06838 13.1642 3.74153C13.2077 3.36207 13.0006 3.02983 12.6511 2.94179C12.5305 2.91655 12.4073 2.90613 12.2842 2.91076C8.76251 2.90941 5.24098 2.90941 1.71956 2.91076C1.63543 2.91037 1.55134 2.91419 1.4676 2.92223C1.10938 2.95798 0.860454 3.21433 0.823351 3.58334C0.809835 3.7467 0.853805 3.90964 0.947664 4.04403C1.04152 4.17841 1.17937 4.27578 1.3374 4.31933C1.44614 4.34459 1.55774 4.35537 1.6693 4.35137C3.4462 4.35362 5.22344 4.35418 7.00101 4.35306H7.00203ZM9.57158 2.08303C9.57158 1.8992 9.58001 1.73088 9.56989 1.56358C9.54291 1.12982 9.24777 0.817475 8.81771 0.813427C7.6068 0.801959 6.3959 0.80432 5.18499 0.813427C4.82003 0.815788 4.51038 1.05999 4.45001 1.39223C4.40886 1.61452 4.41628 1.84557 4.40144 2.08404L9.57158 2.08303Z"
+                                fill="#616161"
+                                fill-opacity="0.7"
+                              />
+                              <path
+                                d="M8.96882 10.4523C8.96882 9.24069 8.96882 8.02911 8.96882 6.81752C8.96813 6.73359 8.97456 6.64975 8.98804 6.56691C9.00461 6.47963 9.0501 6.40048 9.11716 6.34222C9.18422 6.28396 9.26896 6.24998 9.35769 6.24577C9.44643 6.24157 9.534 6.26737 9.60627 6.31902C9.67855 6.37067 9.73132 6.44516 9.75608 6.53048C9.77631 6.61179 9.78651 6.69528 9.78643 6.77907C9.78778 9.23574 9.78778 11.6923 9.78643 14.1488C9.78625 14.2269 9.77686 14.3048 9.75844 14.3808C9.73594 14.4678 9.68444 14.5446 9.61243 14.5984C9.54042 14.6522 9.45221 14.6798 9.36238 14.6767C9.27255 14.6736 9.18646 14.6399 9.11834 14.5813C9.05022 14.5227 9.00414 14.4425 8.98771 14.3542C8.97434 14.2713 8.96802 14.1875 8.96882 14.1036C8.96882 12.887 8.96882 11.6699 8.96882 10.4523Z"
+                                fill="#616161"
+                                fill-opacity="0.7"
+                              />
+                              <path
+                                d="M6.59319 10.4715C6.59319 9.23799 6.59319 8.00415 6.59623 6.77064C6.59569 6.65442 6.61995 6.53943 6.6674 6.43334C6.73486 6.28931 6.8772 6.23939 7.03404 6.25322C7.20033 6.26772 7.31839 6.3561 7.36966 6.51429C7.39287 6.59482 7.40368 6.67842 7.4017 6.76221C7.40305 9.22967 7.40305 11.6971 7.4017 14.1646C7.40324 14.2427 7.39416 14.3207 7.37472 14.3963C7.35045 14.4835 7.29637 14.5593 7.22191 14.6107C7.14745 14.662 7.05733 14.6856 6.96726 14.6773C6.87688 14.6716 6.79121 14.635 6.72468 14.5736C6.65815 14.5121 6.61481 14.4296 6.60196 14.34C6.59408 14.2675 6.59127 14.1946 6.59353 14.1218C6.59308 12.9052 6.59297 11.6885 6.59319 10.4715Z"
+                                fill="#616161"
+                                fill-opacity="0.7"
+                              />
+                              <path
+                                d="M5.01817 10.4708C5.01817 11.7047 5.02019 12.9385 5.0148 14.172C5.0151 14.288 4.9883 14.4025 4.93654 14.5063C4.86267 14.6473 4.71898 14.6945 4.56214 14.675C4.48882 14.6686 4.41909 14.6404 4.36206 14.5939C4.30502 14.5474 4.26332 14.4848 4.24238 14.4142C4.21971 14.3393 4.2089 14.2614 4.21033 14.1832C4.20853 11.7042 4.20853 9.22552 4.21033 6.74704C4.21033 6.45999 4.32232 6.29944 4.54527 6.26065C4.59874 6.24934 4.654 6.24942 4.70744 6.2609C4.76087 6.27238 4.81129 6.29499 4.8554 6.32726C4.89951 6.35953 4.93633 6.40074 4.96344 6.44819C4.99056 6.49565 5.00737 6.54829 5.01277 6.60267C5.01871 6.66996 5.02074 6.73753 5.01884 6.80505C5.01862 8.02631 5.01839 9.24823 5.01817 10.4708Z"
+                                fill="#616161"
+                                fill-opacity="0.7"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_219_8079">
+                                <rect
+                                  width="14"
+                                  height="17.2374"
+                                  fill="white"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="cart-product">
+                      <td class="cart-checkbox">
+                        <div class="checkbox">
+                          <input
+                            type="checkbox"
+                            value="Replace® Long Block Engine"
+                          />
+                          <span class="checkmark"
+                            ><svg
+                              width="12"
+                              height="9"
+                              viewBox="0 0 12 9"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_219_8160)">
+                                <path
+                                  d="M12.0004 0.56561C11.9177 0.67643 11.8477 0.800397 11.751 0.896191C9.21014 3.44004 6.66762 5.98248 4.12346 8.52351C4.03096 8.61601 3.93563 8.69842 3.79805 8.71486C3.61984 8.73622 3.48226 8.66626 3.35899 8.54276C2.29994 7.48199 1.2398 6.422 0.178559 5.36279C0.162124 5.34636 0.145454 5.32992 0.129958 5.31231C0.00552028 5.17144 -0.0343936 5.01085 0.0313469 4.83475C0.0970875 4.65866 0.229743 4.55841 0.415929 4.53423C0.476207 4.52661 0.53741 4.53166 0.595627 4.54904C0.653843 4.56642 0.707792 4.59576 0.754024 4.63519C0.792816 4.66783 0.82981 4.70255 0.864843 4.7392C1.7874 5.66082 2.70957 6.58275 3.63135 7.505C3.65944 7.53747 3.68496 7.57209 3.70765 7.60854L3.76118 7.62262C3.78795 7.58013 3.80814 7.53035 3.84266 7.4956C6.27725 5.0607 8.71247 2.62626 11.1483 0.192297C11.2497 0.0906339 11.3573 0.00634509 11.5101 0.0004754C11.7684 -0.00938568 11.9104 0.135009 12.0004 0.35477V0.56561Z"
+                                  fill="black"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_219_8160">
+                                  <rect
+                                    width="12"
+                                    height="8.71861"
+                                    fill="white"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                        </div>
+                      </td>
+                      <td class="cart-img">
+                        <img
+                          src="./assets/images/product2.png"
+                          title="Replace® Long Block Engine"
+                          alt="Replace® Long Block Engine"
+                        />
+                      </td>
+                      <td class="cart-info">
+                        <div class="cart-info-content">
+                          <a href="#" title="Replace® Long Block Engine"
+                            >Replace® Long Block Engine</a
+                          >
+                          <span
+                            >Designed to give your modern muscle a stylish
+                            look</span
+                          >
+                        </div>
+                      </td>
+                      <td class="cart-quantity">
+                        <div class="cart-quantity-form">
+                          <input
+                            type="button"
+                            value="-"
+                            class="qtyminus minus"
+                          />
+                          <input
+                            type="text"
+                            name="quantity"
+                            value="0"
+                            class="qty"
+                          />
+                          <input type="button" value="+" class="qtyplus plus" />
+                        </div>
+                      </td>
+                      <td class="cart-price">
+                        <h4>$2,196,86</h4>
+                        <span>$2,392.99</span>
+                      </td>
+                      <td class="cart-delete">
+                        <button>
+                          <svg
+                            width="14"
+                            height="18"
+                            viewBox="0 0 14 18"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_219_8079)">
+                              <path
+                                d="M11.0736 17.2376H2.89471C2.65658 17.1475 2.39888 17.0902 2.18402 16.9617C1.46152 16.5299 1.14581 15.8611 1.14547 15.0337C1.14412 11.7934 1.14491 8.5529 1.14783 5.31234C1.14783 5.18147 1.11916 5.11637 0.985593 5.07286C0.730931 4.99022 0.526864 4.82562 0.351467 4.62121C0.163928 4.40197 0.0816268 4.13854 0 3.87207V3.39985C0.00742061 3.39175 0.020238 3.38467 0.0215872 3.37556C0.159206 2.60348 0.824026 2.05807 1.73777 2.08842C2.29803 2.10698 2.8593 2.0918 3.42023 2.0918H3.60541C3.60541 1.90696 3.60203 1.75011 3.60541 1.5936C3.62328 0.845808 4.06582 0.265988 4.78596 0.0636078C4.92613 0.0248213 5.07091 0.00519199 5.21635 0.00525478C6.40534 0.000532575 7.59466 0.00525476 8.78365 0.00154446C9.60936 -0.00385235 10.3147 0.637019 10.3706 1.43271C10.3858 1.64858 10.3949 1.86479 10.4077 2.09281C10.5005 2.09281 10.5838 2.09281 10.6671 2.09281C11.3286 2.10124 11.9914 2.08438 12.6508 2.12654C13.3409 2.16938 13.89 2.75021 13.9879 3.47001C14.0769 4.12673 13.6603 4.83371 13.0309 5.0651C12.891 5.11671 12.8505 5.17911 12.8508 5.32583C12.8555 8.51895 12.8567 11.7113 12.8542 14.9028C12.8542 14.9925 12.8566 15.0826 12.8508 15.1727C12.8056 15.8692 12.5351 16.448 11.9647 16.8713C11.6983 17.0676 11.389 17.1594 11.0736 17.2376ZM1.95263 5.18316V14.9335C1.95263 14.9784 1.95263 15.0232 1.95263 15.0684C1.98636 15.8833 2.48725 16.4274 3.22999 16.4288C5.74266 16.4333 8.25521 16.4333 10.7676 16.4288C11.2827 16.4288 11.6618 16.1849 11.8929 15.716C12.013 15.4718 12.0399 15.2125 12.0399 14.9487C12.0415 11.7569 12.0415 8.56516 12.0399 5.37339V5.18417L1.95263 5.18316ZM7.00203 4.35306H12.2842C12.357 4.35306 12.4302 4.35306 12.5027 4.34867C12.8434 4.32911 13.1271 4.06838 13.1642 3.74153C13.2077 3.36207 13.0006 3.02983 12.6511 2.94179C12.5305 2.91655 12.4073 2.90613 12.2842 2.91076C8.76251 2.90941 5.24098 2.90941 1.71956 2.91076C1.63543 2.91037 1.55134 2.91419 1.4676 2.92223C1.10938 2.95798 0.860454 3.21433 0.823351 3.58334C0.809835 3.7467 0.853805 3.90964 0.947664 4.04403C1.04152 4.17841 1.17937 4.27578 1.3374 4.31933C1.44614 4.34459 1.55774 4.35537 1.6693 4.35137C3.4462 4.35362 5.22344 4.35418 7.00101 4.35306H7.00203ZM9.57158 2.08303C9.57158 1.8992 9.58001 1.73088 9.56989 1.56358C9.54291 1.12982 9.24777 0.817475 8.81771 0.813427C7.6068 0.801959 6.3959 0.80432 5.18499 0.813427C4.82003 0.815788 4.51038 1.05999 4.45001 1.39223C4.40886 1.61452 4.41628 1.84557 4.40144 2.08404L9.57158 2.08303Z"
+                                fill="#616161"
+                                fill-opacity="0.7"
+                              />
+                              <path
+                                d="M8.96882 10.4523C8.96882 9.24069 8.96882 8.02911 8.96882 6.81752C8.96813 6.73359 8.97456 6.64975 8.98804 6.56691C9.00461 6.47963 9.0501 6.40048 9.11716 6.34222C9.18422 6.28396 9.26896 6.24998 9.35769 6.24577C9.44643 6.24157 9.534 6.26737 9.60627 6.31902C9.67855 6.37067 9.73132 6.44516 9.75608 6.53048C9.77631 6.61179 9.78651 6.69528 9.78643 6.77907C9.78778 9.23574 9.78778 11.6923 9.78643 14.1488C9.78625 14.2269 9.77686 14.3048 9.75844 14.3808C9.73594 14.4678 9.68444 14.5446 9.61243 14.5984C9.54042 14.6522 9.45221 14.6798 9.36238 14.6767C9.27255 14.6736 9.18646 14.6399 9.11834 14.5813C9.05022 14.5227 9.00414 14.4425 8.98771 14.3542C8.97434 14.2713 8.96802 14.1875 8.96882 14.1036C8.96882 12.887 8.96882 11.6699 8.96882 10.4523Z"
+                                fill="#616161"
+                                fill-opacity="0.7"
+                              />
+                              <path
+                                d="M6.59319 10.4715C6.59319 9.23799 6.59319 8.00415 6.59623 6.77064C6.59569 6.65442 6.61995 6.53943 6.6674 6.43334C6.73486 6.28931 6.8772 6.23939 7.03404 6.25322C7.20033 6.26772 7.31839 6.3561 7.36966 6.51429C7.39287 6.59482 7.40368 6.67842 7.4017 6.76221C7.40305 9.22967 7.40305 11.6971 7.4017 14.1646C7.40324 14.2427 7.39416 14.3207 7.37472 14.3963C7.35045 14.4835 7.29637 14.5593 7.22191 14.6107C7.14745 14.662 7.05733 14.6856 6.96726 14.6773C6.87688 14.6716 6.79121 14.635 6.72468 14.5736C6.65815 14.5121 6.61481 14.4296 6.60196 14.34C6.59408 14.2675 6.59127 14.1946 6.59353 14.1218C6.59308 12.9052 6.59297 11.6885 6.59319 10.4715Z"
+                                fill="#616161"
+                                fill-opacity="0.7"
+                              />
+                              <path
+                                d="M5.01817 10.4708C5.01817 11.7047 5.02019 12.9385 5.0148 14.172C5.0151 14.288 4.9883 14.4025 4.93654 14.5063C4.86267 14.6473 4.71898 14.6945 4.56214 14.675C4.48882 14.6686 4.41909 14.6404 4.36206 14.5939C4.30502 14.5474 4.26332 14.4848 4.24238 14.4142C4.21971 14.3393 4.2089 14.2614 4.21033 14.1832C4.20853 11.7042 4.20853 9.22552 4.21033 6.74704C4.21033 6.45999 4.32232 6.29944 4.54527 6.26065C4.59874 6.24934 4.654 6.24942 4.70744 6.2609C4.76087 6.27238 4.81129 6.29499 4.8554 6.32726C4.89951 6.35953 4.93633 6.40074 4.96344 6.44819C4.99056 6.49565 5.00737 6.54829 5.01277 6.60267C5.01871 6.66996 5.02074 6.73753 5.01884 6.80505C5.01862 8.02631 5.01839 9.24823 5.01817 10.4708Z"
+                                fill="#616161"
+                                fill-opacity="0.7"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_219_8079">
+                                <rect
+                                  width="14"
+                                  height="17.2374"
+                                  fill="white"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="cart-product">
+                      <td class="cart-checkbox">
+                        <div class="checkbox">
+                          <input
+                            type="checkbox"
+                            value="Seat Cover® RADIAL T/A SPEC"
+                          />
+                          <span class="checkmark"
+                            ><svg
+                              width="12"
+                              height="9"
+                              viewBox="0 0 12 9"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_219_8160)">
+                                <path
+                                  d="M12.0004 0.56561C11.9177 0.67643 11.8477 0.800397 11.751 0.896191C9.21014 3.44004 6.66762 5.98248 4.12346 8.52351C4.03096 8.61601 3.93563 8.69842 3.79805 8.71486C3.61984 8.73622 3.48226 8.66626 3.35899 8.54276C2.29994 7.48199 1.2398 6.422 0.178559 5.36279C0.162124 5.34636 0.145454 5.32992 0.129958 5.31231C0.00552028 5.17144 -0.0343936 5.01085 0.0313469 4.83475C0.0970875 4.65866 0.229743 4.55841 0.415929 4.53423C0.476207 4.52661 0.53741 4.53166 0.595627 4.54904C0.653843 4.56642 0.707792 4.59576 0.754024 4.63519C0.792816 4.66783 0.82981 4.70255 0.864843 4.7392C1.7874 5.66082 2.70957 6.58275 3.63135 7.505C3.65944 7.53747 3.68496 7.57209 3.70765 7.60854L3.76118 7.62262C3.78795 7.58013 3.80814 7.53035 3.84266 7.4956C6.27725 5.0607 8.71247 2.62626 11.1483 0.192297C11.2497 0.0906339 11.3573 0.00634509 11.5101 0.0004754C11.7684 -0.00938568 11.9104 0.135009 12.0004 0.35477V0.56561Z"
+                                  fill="black"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_219_8160">
+                                  <rect
+                                    width="12"
+                                    height="8.71861"
+                                    fill="white"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                        </div>
+                      </td>
+                      <td class="cart-img">
+                        <img
+                          src="./assets/images/product4.png"
+                          title="Seat Cover® RADIAL T/A SPEC"
+                          alt="Seat Cover® RADIAL T/A SPEC"
+                        />
+                      </td>
+                      <td class="cart-info">
+                        <div class="cart-info-content">
+                          <a href="#" title="Seat Cover® RADIAL T/A SPEC"
+                            >Seat Cover® RADIAL T/A SPEC</a
+                          >
+                          <span>Season: All Season. Type: Truck / SUV</span>
+                        </div>
+                      </td>
+                      <td class="cart-quantity">
+                        <div class="cart-quantity-form">
+                          <input
+                            type="button"
+                            value="-"
+                            class="qtyminus minus"
+                          />
+                          <input
+                            type="text"
+                            name="quantity"
+                            value="0"
+                            class="qty"
+                          />
+                          <input type="button" value="+" class="qtyplus plus" />
+                        </div>
+                      </td>
+                      <td class="cart-price">
+                        <h4>$721,86</h4>
+                        <span>$892.99</span>
+                      </td>
+                      <td class="cart-delete">
+                        <button>
+                          <svg
+                            width="14"
+                            height="18"
+                            viewBox="0 0 14 18"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_219_8079)">
+                              <path
+                                d="M11.0736 17.2376H2.89471C2.65658 17.1475 2.39888 17.0902 2.18402 16.9617C1.46152 16.5299 1.14581 15.8611 1.14547 15.0337C1.14412 11.7934 1.14491 8.5529 1.14783 5.31234C1.14783 5.18147 1.11916 5.11637 0.985593 5.07286C0.730931 4.99022 0.526864 4.82562 0.351467 4.62121C0.163928 4.40197 0.0816268 4.13854 0 3.87207V3.39985C0.00742061 3.39175 0.020238 3.38467 0.0215872 3.37556C0.159206 2.60348 0.824026 2.05807 1.73777 2.08842C2.29803 2.10698 2.8593 2.0918 3.42023 2.0918H3.60541C3.60541 1.90696 3.60203 1.75011 3.60541 1.5936C3.62328 0.845808 4.06582 0.265988 4.78596 0.0636078C4.92613 0.0248213 5.07091 0.00519199 5.21635 0.00525478C6.40534 0.000532575 7.59466 0.00525476 8.78365 0.00154446C9.60936 -0.00385235 10.3147 0.637019 10.3706 1.43271C10.3858 1.64858 10.3949 1.86479 10.4077 2.09281C10.5005 2.09281 10.5838 2.09281 10.6671 2.09281C11.3286 2.10124 11.9914 2.08438 12.6508 2.12654C13.3409 2.16938 13.89 2.75021 13.9879 3.47001C14.0769 4.12673 13.6603 4.83371 13.0309 5.0651C12.891 5.11671 12.8505 5.17911 12.8508 5.32583C12.8555 8.51895 12.8567 11.7113 12.8542 14.9028C12.8542 14.9925 12.8566 15.0826 12.8508 15.1727C12.8056 15.8692 12.5351 16.448 11.9647 16.8713C11.6983 17.0676 11.389 17.1594 11.0736 17.2376ZM1.95263 5.18316V14.9335C1.95263 14.9784 1.95263 15.0232 1.95263 15.0684C1.98636 15.8833 2.48725 16.4274 3.22999 16.4288C5.74266 16.4333 8.25521 16.4333 10.7676 16.4288C11.2827 16.4288 11.6618 16.1849 11.8929 15.716C12.013 15.4718 12.0399 15.2125 12.0399 14.9487C12.0415 11.7569 12.0415 8.56516 12.0399 5.37339V5.18417L1.95263 5.18316ZM7.00203 4.35306H12.2842C12.357 4.35306 12.4302 4.35306 12.5027 4.34867C12.8434 4.32911 13.1271 4.06838 13.1642 3.74153C13.2077 3.36207 13.0006 3.02983 12.6511 2.94179C12.5305 2.91655 12.4073 2.90613 12.2842 2.91076C8.76251 2.90941 5.24098 2.90941 1.71956 2.91076C1.63543 2.91037 1.55134 2.91419 1.4676 2.92223C1.10938 2.95798 0.860454 3.21433 0.823351 3.58334C0.809835 3.7467 0.853805 3.90964 0.947664 4.04403C1.04152 4.17841 1.17937 4.27578 1.3374 4.31933C1.44614 4.34459 1.55774 4.35537 1.6693 4.35137C3.4462 4.35362 5.22344 4.35418 7.00101 4.35306H7.00203ZM9.57158 2.08303C9.57158 1.8992 9.58001 1.73088 9.56989 1.56358C9.54291 1.12982 9.24777 0.817475 8.81771 0.813427C7.6068 0.801959 6.3959 0.80432 5.18499 0.813427C4.82003 0.815788 4.51038 1.05999 4.45001 1.39223C4.40886 1.61452 4.41628 1.84557 4.40144 2.08404L9.57158 2.08303Z"
+                                fill="#616161"
+                                fill-opacity="0.7"
+                              />
+                              <path
+                                d="M8.96882 10.4523C8.96882 9.24069 8.96882 8.02911 8.96882 6.81752C8.96813 6.73359 8.97456 6.64975 8.98804 6.56691C9.00461 6.47963 9.0501 6.40048 9.11716 6.34222C9.18422 6.28396 9.26896 6.24998 9.35769 6.24577C9.44643 6.24157 9.534 6.26737 9.60627 6.31902C9.67855 6.37067 9.73132 6.44516 9.75608 6.53048C9.77631 6.61179 9.78651 6.69528 9.78643 6.77907C9.78778 9.23574 9.78778 11.6923 9.78643 14.1488C9.78625 14.2269 9.77686 14.3048 9.75844 14.3808C9.73594 14.4678 9.68444 14.5446 9.61243 14.5984C9.54042 14.6522 9.45221 14.6798 9.36238 14.6767C9.27255 14.6736 9.18646 14.6399 9.11834 14.5813C9.05022 14.5227 9.00414 14.4425 8.98771 14.3542C8.97434 14.2713 8.96802 14.1875 8.96882 14.1036C8.96882 12.887 8.96882 11.6699 8.96882 10.4523Z"
+                                fill="#616161"
+                                fill-opacity="0.7"
+                              />
+                              <path
+                                d="M6.59319 10.4715C6.59319 9.23799 6.59319 8.00415 6.59623 6.77064C6.59569 6.65442 6.61995 6.53943 6.6674 6.43334C6.73486 6.28931 6.8772 6.23939 7.03404 6.25322C7.20033 6.26772 7.31839 6.3561 7.36966 6.51429C7.39287 6.59482 7.40368 6.67842 7.4017 6.76221C7.40305 9.22967 7.40305 11.6971 7.4017 14.1646C7.40324 14.2427 7.39416 14.3207 7.37472 14.3963C7.35045 14.4835 7.29637 14.5593 7.22191 14.6107C7.14745 14.662 7.05733 14.6856 6.96726 14.6773C6.87688 14.6716 6.79121 14.635 6.72468 14.5736C6.65815 14.5121 6.61481 14.4296 6.60196 14.34C6.59408 14.2675 6.59127 14.1946 6.59353 14.1218C6.59308 12.9052 6.59297 11.6885 6.59319 10.4715Z"
+                                fill="#616161"
+                                fill-opacity="0.7"
+                              />
+                              <path
+                                d="M5.01817 10.4708C5.01817 11.7047 5.02019 12.9385 5.0148 14.172C5.0151 14.288 4.9883 14.4025 4.93654 14.5063C4.86267 14.6473 4.71898 14.6945 4.56214 14.675C4.48882 14.6686 4.41909 14.6404 4.36206 14.5939C4.30502 14.5474 4.26332 14.4848 4.24238 14.4142C4.21971 14.3393 4.2089 14.2614 4.21033 14.1832C4.20853 11.7042 4.20853 9.22552 4.21033 6.74704C4.21033 6.45999 4.32232 6.29944 4.54527 6.26065C4.59874 6.24934 4.654 6.24942 4.70744 6.2609C4.76087 6.27238 4.81129 6.29499 4.8554 6.32726C4.89951 6.35953 4.93633 6.40074 4.96344 6.44819C4.99056 6.49565 5.00737 6.54829 5.01277 6.60267C5.01871 6.66996 5.02074 6.73753 5.01884 6.80505C5.01862 8.02631 5.01839 9.24823 5.01817 10.4708Z"
+                                fill="#616161"
+                                fill-opacity="0.7"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_219_8079">
+                                <rect
+                                  width="14"
+                                  height="17.2374"
+                                  fill="white"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="cart-product">
+                      <td class="cart-checkbox">
+                        <div class="checkbox">
+                          <input
+                            type="checkbox"
+                            value="Car® Phone Mobile Phone"
+                          />
+                          <span class="checkmark"
+                            ><svg
+                              width="12"
+                              height="9"
+                              viewBox="0 0 12 9"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_219_8160)">
+                                <path
+                                  d="M12.0004 0.56561C11.9177 0.67643 11.8477 0.800397 11.751 0.896191C9.21014 3.44004 6.66762 5.98248 4.12346 8.52351C4.03096 8.61601 3.93563 8.69842 3.79805 8.71486C3.61984 8.73622 3.48226 8.66626 3.35899 8.54276C2.29994 7.48199 1.2398 6.422 0.178559 5.36279C0.162124 5.34636 0.145454 5.32992 0.129958 5.31231C0.00552028 5.17144 -0.0343936 5.01085 0.0313469 4.83475C0.0970875 4.65866 0.229743 4.55841 0.415929 4.53423C0.476207 4.52661 0.53741 4.53166 0.595627 4.54904C0.653843 4.56642 0.707792 4.59576 0.754024 4.63519C0.792816 4.66783 0.82981 4.70255 0.864843 4.7392C1.7874 5.66082 2.70957 6.58275 3.63135 7.505C3.65944 7.53747 3.68496 7.57209 3.70765 7.60854L3.76118 7.62262C3.78795 7.58013 3.80814 7.53035 3.84266 7.4956C6.27725 5.0607 8.71247 2.62626 11.1483 0.192297C11.2497 0.0906339 11.3573 0.00634509 11.5101 0.0004754C11.7684 -0.00938568 11.9104 0.135009 12.0004 0.35477V0.56561Z"
+                                  fill="black"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_219_8160">
+                                  <rect
+                                    width="12"
+                                    height="8.71861"
+                                    fill="white"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                        </div>
+                      </td>
+                      <td class="cart-img">
+                        <img
+                          src="./assets/images/product5.png"
+                          title="Car® Phone Mobile Phone"
+                          alt="Car® Phone Mobile Phone"
+                        />
+                      </td>
+                      <td class="cart-info">
+                        <div class="cart-info-content">
+                          <a href="#" title="Car® Phone Mobile Phone"
+                            >Car® Phone Mobile Phone</a
+                          >
+                          <span
+                            >Designed to give your modern muscle a stylish
+                            look</span
+                          >
+                        </div>
+                      </td>
+                      <td class="cart-quantity">
+                        <div class="cart-quantity-form">
+                          <input
+                            type="button"
+                            value="-"
+                            class="qtyminus minus"
+                          />
+                          <input
+                            type="text"
+                            name="quantity"
+                            value="0"
+                            class="qty"
+                          />
+                          <input type="button" value="+" class="qtyplus plus" />
+                        </div>
+                      </td>
+                      <td class="cart-price">
+                        <h4>$696,86</h4>
+                      </td>
+                      <td class="cart-delete">
+                        <button>
+                          <svg
+                            width="14"
+                            height="18"
+                            viewBox="0 0 14 18"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_219_8079)">
+                              <path
+                                d="M11.0736 17.2376H2.89471C2.65658 17.1475 2.39888 17.0902 2.18402 16.9617C1.46152 16.5299 1.14581 15.8611 1.14547 15.0337C1.14412 11.7934 1.14491 8.5529 1.14783 5.31234C1.14783 5.18147 1.11916 5.11637 0.985593 5.07286C0.730931 4.99022 0.526864 4.82562 0.351467 4.62121C0.163928 4.40197 0.0816268 4.13854 0 3.87207V3.39985C0.00742061 3.39175 0.020238 3.38467 0.0215872 3.37556C0.159206 2.60348 0.824026 2.05807 1.73777 2.08842C2.29803 2.10698 2.8593 2.0918 3.42023 2.0918H3.60541C3.60541 1.90696 3.60203 1.75011 3.60541 1.5936C3.62328 0.845808 4.06582 0.265988 4.78596 0.0636078C4.92613 0.0248213 5.07091 0.00519199 5.21635 0.00525478C6.40534 0.000532575 7.59466 0.00525476 8.78365 0.00154446C9.60936 -0.00385235 10.3147 0.637019 10.3706 1.43271C10.3858 1.64858 10.3949 1.86479 10.4077 2.09281C10.5005 2.09281 10.5838 2.09281 10.6671 2.09281C11.3286 2.10124 11.9914 2.08438 12.6508 2.12654C13.3409 2.16938 13.89 2.75021 13.9879 3.47001C14.0769 4.12673 13.6603 4.83371 13.0309 5.0651C12.891 5.11671 12.8505 5.17911 12.8508 5.32583C12.8555 8.51895 12.8567 11.7113 12.8542 14.9028C12.8542 14.9925 12.8566 15.0826 12.8508 15.1727C12.8056 15.8692 12.5351 16.448 11.9647 16.8713C11.6983 17.0676 11.389 17.1594 11.0736 17.2376ZM1.95263 5.18316V14.9335C1.95263 14.9784 1.95263 15.0232 1.95263 15.0684C1.98636 15.8833 2.48725 16.4274 3.22999 16.4288C5.74266 16.4333 8.25521 16.4333 10.7676 16.4288C11.2827 16.4288 11.6618 16.1849 11.8929 15.716C12.013 15.4718 12.0399 15.2125 12.0399 14.9487C12.0415 11.7569 12.0415 8.56516 12.0399 5.37339V5.18417L1.95263 5.18316ZM7.00203 4.35306H12.2842C12.357 4.35306 12.4302 4.35306 12.5027 4.34867C12.8434 4.32911 13.1271 4.06838 13.1642 3.74153C13.2077 3.36207 13.0006 3.02983 12.6511 2.94179C12.5305 2.91655 12.4073 2.90613 12.2842 2.91076C8.76251 2.90941 5.24098 2.90941 1.71956 2.91076C1.63543 2.91037 1.55134 2.91419 1.4676 2.92223C1.10938 2.95798 0.860454 3.21433 0.823351 3.58334C0.809835 3.7467 0.853805 3.90964 0.947664 4.04403C1.04152 4.17841 1.17937 4.27578 1.3374 4.31933C1.44614 4.34459 1.55774 4.35537 1.6693 4.35137C3.4462 4.35362 5.22344 4.35418 7.00101 4.35306H7.00203ZM9.57158 2.08303C9.57158 1.8992 9.58001 1.73088 9.56989 1.56358C9.54291 1.12982 9.24777 0.817475 8.81771 0.813427C7.6068 0.801959 6.3959 0.80432 5.18499 0.813427C4.82003 0.815788 4.51038 1.05999 4.45001 1.39223C4.40886 1.61452 4.41628 1.84557 4.40144 2.08404L9.57158 2.08303Z"
+                                fill="#616161"
+                                fill-opacity="0.7"
+                              />
+                              <path
+                                d="M8.96882 10.4523C8.96882 9.24069 8.96882 8.02911 8.96882 6.81752C8.96813 6.73359 8.97456 6.64975 8.98804 6.56691C9.00461 6.47963 9.0501 6.40048 9.11716 6.34222C9.18422 6.28396 9.26896 6.24998 9.35769 6.24577C9.44643 6.24157 9.534 6.26737 9.60627 6.31902C9.67855 6.37067 9.73132 6.44516 9.75608 6.53048C9.77631 6.61179 9.78651 6.69528 9.78643 6.77907C9.78778 9.23574 9.78778 11.6923 9.78643 14.1488C9.78625 14.2269 9.77686 14.3048 9.75844 14.3808C9.73594 14.4678 9.68444 14.5446 9.61243 14.5984C9.54042 14.6522 9.45221 14.6798 9.36238 14.6767C9.27255 14.6736 9.18646 14.6399 9.11834 14.5813C9.05022 14.5227 9.00414 14.4425 8.98771 14.3542C8.97434 14.2713 8.96802 14.1875 8.96882 14.1036C8.96882 12.887 8.96882 11.6699 8.96882 10.4523Z"
+                                fill="#616161"
+                                fill-opacity="0.7"
+                              />
+                              <path
+                                d="M6.59319 10.4715C6.59319 9.23799 6.59319 8.00415 6.59623 6.77064C6.59569 6.65442 6.61995 6.53943 6.6674 6.43334C6.73486 6.28931 6.8772 6.23939 7.03404 6.25322C7.20033 6.26772 7.31839 6.3561 7.36966 6.51429C7.39287 6.59482 7.40368 6.67842 7.4017 6.76221C7.40305 9.22967 7.40305 11.6971 7.4017 14.1646C7.40324 14.2427 7.39416 14.3207 7.37472 14.3963C7.35045 14.4835 7.29637 14.5593 7.22191 14.6107C7.14745 14.662 7.05733 14.6856 6.96726 14.6773C6.87688 14.6716 6.79121 14.635 6.72468 14.5736C6.65815 14.5121 6.61481 14.4296 6.60196 14.34C6.59408 14.2675 6.59127 14.1946 6.59353 14.1218C6.59308 12.9052 6.59297 11.6885 6.59319 10.4715Z"
+                                fill="#616161"
+                                fill-opacity="0.7"
+                              />
+                              <path
+                                d="M5.01817 10.4708C5.01817 11.7047 5.02019 12.9385 5.0148 14.172C5.0151 14.288 4.9883 14.4025 4.93654 14.5063C4.86267 14.6473 4.71898 14.6945 4.56214 14.675C4.48882 14.6686 4.41909 14.6404 4.36206 14.5939C4.30502 14.5474 4.26332 14.4848 4.24238 14.4142C4.21971 14.3393 4.2089 14.2614 4.21033 14.1832C4.20853 11.7042 4.20853 9.22552 4.21033 6.74704C4.21033 6.45999 4.32232 6.29944 4.54527 6.26065C4.59874 6.24934 4.654 6.24942 4.70744 6.2609C4.76087 6.27238 4.81129 6.29499 4.8554 6.32726C4.89951 6.35953 4.93633 6.40074 4.96344 6.44819C4.99056 6.49565 5.00737 6.54829 5.01277 6.60267C5.01871 6.66996 5.02074 6.73753 5.01884 6.80505C5.01862 8.02631 5.01839 9.24823 5.01817 10.4708Z"
+                                fill="#616161"
+                                fill-opacity="0.7"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_219_8079">
+                                <rect
+                                  width="14"
+                                  height="17.2374"
+                                  fill="white"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="cart-product">
+                      <td class="cart-checkbox">
+                        <div class="checkbox">
+                          <input
+                            type="checkbox"
+                            value="MICKEY THOMPSON TIRES®"
+                          />
+                          <span class="checkmark"
+                            ><svg
+                              width="12"
+                              height="9"
+                              viewBox="0 0 12 9"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_219_8160)">
+                                <path
+                                  d="M12.0004 0.56561C11.9177 0.67643 11.8477 0.800397 11.751 0.896191C9.21014 3.44004 6.66762 5.98248 4.12346 8.52351C4.03096 8.61601 3.93563 8.69842 3.79805 8.71486C3.61984 8.73622 3.48226 8.66626 3.35899 8.54276C2.29994 7.48199 1.2398 6.422 0.178559 5.36279C0.162124 5.34636 0.145454 5.32992 0.129958 5.31231C0.00552028 5.17144 -0.0343936 5.01085 0.0313469 4.83475C0.0970875 4.65866 0.229743 4.55841 0.415929 4.53423C0.476207 4.52661 0.53741 4.53166 0.595627 4.54904C0.653843 4.56642 0.707792 4.59576 0.754024 4.63519C0.792816 4.66783 0.82981 4.70255 0.864843 4.7392C1.7874 5.66082 2.70957 6.58275 3.63135 7.505C3.65944 7.53747 3.68496 7.57209 3.70765 7.60854L3.76118 7.62262C3.78795 7.58013 3.80814 7.53035 3.84266 7.4956C6.27725 5.0607 8.71247 2.62626 11.1483 0.192297C11.2497 0.0906339 11.3573 0.00634509 11.5101 0.0004754C11.7684 -0.00938568 11.9104 0.135009 12.0004 0.35477V0.56561Z"
+                                  fill="black"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_219_8160">
+                                  <rect
+                                    width="12"
+                                    height="8.71861"
+                                    fill="white"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </span>
+                        </div>
+                      </td>
+                      <td class="cart-img">
+                        <img
+                          src="./assets/images/product6.png"
+                          title="MICKEY THOMPSON TIRES®"
+                          alt="MICKEY THOMPSON TIRES®"
+                        />
+                      </td>
+                      <td class="cart-info">
+                        <div class="cart-info-content">
+                          <a href="#" title="MICKEY THOMPSON TIRES®"
+                            >MICKEY THOMPSON TIRES®</a
+                          >
+                          <span>Season: All Season. Type: Truck / SUV</span>
+                        </div>
+                      </td>
+                      <td class="cart-quantity">
+                        <div class="cart-quantity-form">
+                          <input
+                            type="button"
+                            value="-"
+                            class="qtyminus minus"
+                          />
+                          <input
+                            type="text"
+                            name="quantity"
+                            value="0"
+                            class="qty"
+                          />
+                          <input type="button" value="+" class="qtyplus plus" />
+                        </div>
+                      </td>
+                      <td class="cart-price">
+                        <h4>$3,219,86</h4>
+                      </td>
+                      <td class="cart-delete">
+                        <button>
+                          <svg
+                            width="14"
+                            height="18"
+                            viewBox="0 0 14 18"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_219_8079)">
+                              <path
+                                d="M11.0736 17.2376H2.89471C2.65658 17.1475 2.39888 17.0902 2.18402 16.9617C1.46152 16.5299 1.14581 15.8611 1.14547 15.0337C1.14412 11.7934 1.14491 8.5529 1.14783 5.31234C1.14783 5.18147 1.11916 5.11637 0.985593 5.07286C0.730931 4.99022 0.526864 4.82562 0.351467 4.62121C0.163928 4.40197 0.0816268 4.13854 0 3.87207V3.39985C0.00742061 3.39175 0.020238 3.38467 0.0215872 3.37556C0.159206 2.60348 0.824026 2.05807 1.73777 2.08842C2.29803 2.10698 2.8593 2.0918 3.42023 2.0918H3.60541C3.60541 1.90696 3.60203 1.75011 3.60541 1.5936C3.62328 0.845808 4.06582 0.265988 4.78596 0.0636078C4.92613 0.0248213 5.07091 0.00519199 5.21635 0.00525478C6.40534 0.000532575 7.59466 0.00525476 8.78365 0.00154446C9.60936 -0.00385235 10.3147 0.637019 10.3706 1.43271C10.3858 1.64858 10.3949 1.86479 10.4077 2.09281C10.5005 2.09281 10.5838 2.09281 10.6671 2.09281C11.3286 2.10124 11.9914 2.08438 12.6508 2.12654C13.3409 2.16938 13.89 2.75021 13.9879 3.47001C14.0769 4.12673 13.6603 4.83371 13.0309 5.0651C12.891 5.11671 12.8505 5.17911 12.8508 5.32583C12.8555 8.51895 12.8567 11.7113 12.8542 14.9028C12.8542 14.9925 12.8566 15.0826 12.8508 15.1727C12.8056 15.8692 12.5351 16.448 11.9647 16.8713C11.6983 17.0676 11.389 17.1594 11.0736 17.2376ZM1.95263 5.18316V14.9335C1.95263 14.9784 1.95263 15.0232 1.95263 15.0684C1.98636 15.8833 2.48725 16.4274 3.22999 16.4288C5.74266 16.4333 8.25521 16.4333 10.7676 16.4288C11.2827 16.4288 11.6618 16.1849 11.8929 15.716C12.013 15.4718 12.0399 15.2125 12.0399 14.9487C12.0415 11.7569 12.0415 8.56516 12.0399 5.37339V5.18417L1.95263 5.18316ZM7.00203 4.35306H12.2842C12.357 4.35306 12.4302 4.35306 12.5027 4.34867C12.8434 4.32911 13.1271 4.06838 13.1642 3.74153C13.2077 3.36207 13.0006 3.02983 12.6511 2.94179C12.5305 2.91655 12.4073 2.90613 12.2842 2.91076C8.76251 2.90941 5.24098 2.90941 1.71956 2.91076C1.63543 2.91037 1.55134 2.91419 1.4676 2.92223C1.10938 2.95798 0.860454 3.21433 0.823351 3.58334C0.809835 3.7467 0.853805 3.90964 0.947664 4.04403C1.04152 4.17841 1.17937 4.27578 1.3374 4.31933C1.44614 4.34459 1.55774 4.35537 1.6693 4.35137C3.4462 4.35362 5.22344 4.35418 7.00101 4.35306H7.00203ZM9.57158 2.08303C9.57158 1.8992 9.58001 1.73088 9.56989 1.56358C9.54291 1.12982 9.24777 0.817475 8.81771 0.813427C7.6068 0.801959 6.3959 0.80432 5.18499 0.813427C4.82003 0.815788 4.51038 1.05999 4.45001 1.39223C4.40886 1.61452 4.41628 1.84557 4.40144 2.08404L9.57158 2.08303Z"
+                                fill="#616161"
+                                fill-opacity="0.7"
+                              />
+                              <path
+                                d="M8.96882 10.4523C8.96882 9.24069 8.96882 8.02911 8.96882 6.81752C8.96813 6.73359 8.97456 6.64975 8.98804 6.56691C9.00461 6.47963 9.0501 6.40048 9.11716 6.34222C9.18422 6.28396 9.26896 6.24998 9.35769 6.24577C9.44643 6.24157 9.534 6.26737 9.60627 6.31902C9.67855 6.37067 9.73132 6.44516 9.75608 6.53048C9.77631 6.61179 9.78651 6.69528 9.78643 6.77907C9.78778 9.23574 9.78778 11.6923 9.78643 14.1488C9.78625 14.2269 9.77686 14.3048 9.75844 14.3808C9.73594 14.4678 9.68444 14.5446 9.61243 14.5984C9.54042 14.6522 9.45221 14.6798 9.36238 14.6767C9.27255 14.6736 9.18646 14.6399 9.11834 14.5813C9.05022 14.5227 9.00414 14.4425 8.98771 14.3542C8.97434 14.2713 8.96802 14.1875 8.96882 14.1036C8.96882 12.887 8.96882 11.6699 8.96882 10.4523Z"
+                                fill="#616161"
+                                fill-opacity="0.7"
+                              />
+                              <path
+                                d="M6.59319 10.4715C6.59319 9.23799 6.59319 8.00415 6.59623 6.77064C6.59569 6.65442 6.61995 6.53943 6.6674 6.43334C6.73486 6.28931 6.8772 6.23939 7.03404 6.25322C7.20033 6.26772 7.31839 6.3561 7.36966 6.51429C7.39287 6.59482 7.40368 6.67842 7.4017 6.76221C7.40305 9.22967 7.40305 11.6971 7.4017 14.1646C7.40324 14.2427 7.39416 14.3207 7.37472 14.3963C7.35045 14.4835 7.29637 14.5593 7.22191 14.6107C7.14745 14.662 7.05733 14.6856 6.96726 14.6773C6.87688 14.6716 6.79121 14.635 6.72468 14.5736C6.65815 14.5121 6.61481 14.4296 6.60196 14.34C6.59408 14.2675 6.59127 14.1946 6.59353 14.1218C6.59308 12.9052 6.59297 11.6885 6.59319 10.4715Z"
+                                fill="#616161"
+                                fill-opacity="0.7"
+                              />
+                              <path
+                                d="M5.01817 10.4708C5.01817 11.7047 5.02019 12.9385 5.0148 14.172C5.0151 14.288 4.9883 14.4025 4.93654 14.5063C4.86267 14.6473 4.71898 14.6945 4.56214 14.675C4.48882 14.6686 4.41909 14.6404 4.36206 14.5939C4.30502 14.5474 4.26332 14.4848 4.24238 14.4142C4.21971 14.3393 4.2089 14.2614 4.21033 14.1832C4.20853 11.7042 4.20853 9.22552 4.21033 6.74704C4.21033 6.45999 4.32232 6.29944 4.54527 6.26065C4.59874 6.24934 4.654 6.24942 4.70744 6.2609C4.76087 6.27238 4.81129 6.29499 4.8554 6.32726C4.89951 6.35953 4.93633 6.40074 4.96344 6.44819C4.99056 6.49565 5.00737 6.54829 5.01277 6.60267C5.01871 6.66996 5.02074 6.73753 5.01884 6.80505C5.01862 8.02631 5.01839 9.24823 5.01817 10.4708Z"
+                                fill="#616161"
+                                fill-opacity="0.7"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_219_8079">
+                                <rect
+                                  width="14"
+                                  height="17.2374"
+                                  fill="white"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4">
+              <div class="shopping-cart-label">
+                <div class="order">
+                  <div class="order-bg"></div>
+                  <div class="order-container">
+                    <h5>Order Summary</h5>
+                    <table class="table order-table">
+                      <tbody>
+                        <tr>
+                          <th>Subtotal</th>
+                          <td>$7,896 USD</td>
+                        </tr>
+                        <tr>
+                          <th>Discounts</th>
+                          <td class="discount">
+                            <svg
+                              width="12"
+                              height="12"
+                              viewBox="0 0 12 12"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_219_8199)">
+                                <path
+                                  d="M0.00109554 3.30988C0.00109554 2.62625 -0.0020032 1.94234 0.00222235 1.25871C0.00588449 0.632259 0.368155 0.163831 0.948746 0.0325692C1.06171 0.00721831 1.18115 0.00355651 1.29749 0.00327483C2.63249 0.00130309 3.9672 0.00552825 5.30219 -0.00010529C5.69376 -0.00179535 6.0118 0.124114 6.29266 0.406636C8.0488 2.17416 9.81395 3.93295 11.5757 5.69512C11.989 6.10834 12.1093 6.58297 11.8969 7.04604C11.8264 7.19984 11.7222 7.34772 11.6028 7.468C10.2295 8.8499 8.85081 10.227 7.47159 11.6033C6.94339 12.1303 6.25547 12.1331 5.72728 11.6061C3.92043 9.8031 2.11612 7.99755 0.311814 6.192C0.129834 6.00975 0.0165892 5.78695 0.0140539 5.52949C0.0061662 4.78981 0.0112369 4.04985 0.0112369 3.30988C0.00785642 3.30988 0.00447598 3.30988 0.00109554 3.30988ZM2.99532 2.10796C2.99701 1.59334 2.61699 1.2097 2.10429 1.20716C1.59497 1.20491 1.20566 1.5939 1.20707 2.10402C1.20819 2.61019 1.58962 2.99384 2.09331 2.99581C2.60939 2.99778 2.99391 2.61921 2.9956 2.10796H2.99532Z"
+                                  fill="#C60808"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_219_8199">
+                                  <rect width="12" height="12" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                            (-)
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>Shipping Fee</th>
+                          <td>$15 USD</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <th>Total<span>(12 items)</span></th>
+                        <td class="total-price">$7,911 USD</td>
+                      </tfoot>
+                    </table>
+                    <button class="main-btn">Process to Check Out</button>
+                  </div>
+                </div>
+                <div class="protection">
+                  <div class="protection-content">
+                    <h6>
+                      <svg
+                        width="10"
+                        height="13"
+                        viewBox="0 0 10 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_233_15)">
+                          <path
+                            d="M0.00214512 3.84353C0.00214512 3.35742 0.00546041 2.87131 3.57847e-05 2.38551C-0.00177242 2.21282 0.0648298 2.11066 0.226363 2.04074C1.76254 1.37773 3.2971 0.710302 4.83006 0.0384523C4.88403 0.012853 4.94302 -0.000427246 5.00275 -0.000427246C5.06248 -0.000427246 5.12146 0.012853 5.17543 0.0384523C6.70859 0.70749 8.24246 1.37492 9.77702 2.04074C9.93042 2.10704 10.0012 2.20439 10 2.37225C9.99341 3.27906 10.0112 4.18648 9.98436 5.0927C9.93524 6.77222 9.43226 8.31734 8.51429 9.72111C7.67619 11.004 6.57318 12.0019 5.22938 12.7366C5.07267 12.8222 4.94097 12.8303 4.78154 12.7411C2.27748 11.3373 0.729949 9.23561 0.157952 6.4154C-0.0147316 5.56555 -0.000265823 4.70454 0.00214512 3.84353ZM0.5208 3.89536C0.513869 4.70665 0.505731 5.51763 0.666963 6.31927C1.19014 8.91947 2.60597 10.8757 4.89124 12.2116C4.97984 12.2632 5.04193 12.2505 5.12119 12.2047C6.06669 11.6735 6.90207 10.9667 7.58246 10.1222C8.77347 8.63769 9.40393 6.93858 9.47324 5.03936C9.50338 4.22868 9.47776 3.41619 9.48198 2.6046C9.48198 2.51088 9.45486 2.46627 9.36656 2.4283C7.94531 1.81321 6.52647 1.19269 5.10461 0.579107C5.03748 0.553353 4.96319 0.553353 4.89606 0.579107C3.47511 1.19299 2.05657 1.81321 0.635922 2.4277C0.549128 2.46537 0.517184 2.50666 0.518389 2.60189C0.523512 3.03375 0.5208 3.46471 0.5208 3.89536Z"
+                            fill="black"
+                          />
+                          <path
+                            d="M4.01751 6.66292C4.04976 6.61199 4.07387 6.55322 4.11546 6.51223C4.99585 5.62822 5.87725 4.74592 6.75966 3.86532C6.95917 3.66581 7.07459 3.66611 7.2762 3.86743C7.53839 4.12861 7.80018 4.3909 8.06157 4.6543C8.23215 4.82638 8.23365 4.94753 8.06368 5.1178C6.77925 6.40485 5.49401 7.69129 4.20798 8.97713C4.04463 9.14017 3.91143 9.13685 3.74477 8.9705C3.14605 8.37218 2.54774 7.77286 1.94982 7.17253C1.76358 6.98568 1.76328 6.87297 1.94621 6.68884C2.21463 6.41881 2.48375 6.14959 2.75357 5.88117C2.92053 5.71572 3.04891 5.71662 3.21678 5.88298C3.46239 6.12588 3.7065 6.37059 3.95181 6.6138C3.96005 6.6191 3.96928 6.62269 3.97894 6.62434L4.01751 6.66292ZM7.01371 4.34962C6.96881 4.39211 6.92873 4.42858 6.89045 4.46685L4.29869 7.05862C4.01058 7.34672 3.94548 7.34672 3.65617 7.05651C3.43466 6.8344 3.21376 6.61138 2.99949 6.3953L2.48204 6.91969L3.98888 8.42653L7.53629 4.87852L7.01371 4.34962Z"
+                            fill="black"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_233_15">
+                            <rect width="10" height="12.8057" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      Buyer Protection
+                    </h6>
+                    <p>
+                      Get full refund if the item is not as described or if is
+                      not delivered
+                    </p>
+                  </div>
+                  <div class="protection-bg"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END SHOPPING CART -->
+
+      <!-- START RECENTLY -->
+      <section class="recently">
+        <div class="container">
+          <h2>Recently View</h2>
+        </div>
+        <div class="recently-container">
+          <div class="container">
+            <div class="recently-slider swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-1.png"
+                        alt="(Pre order) MiniGT Card Mỹ Mercedes-Benz..."
+                        title="(Pre order) MiniGT Card Mỹ Mercedes-Benz..."
+                      />
+                      <button class="product-wishlist">
+                        <img
+                          src="assets/images/product-wishlist.svg"
+                          alt="wishlist"
+                          title="wishlist"
+                        />
+                      </button>
+                      <button class="product-quickview">Quick View</button>
+                    </div>
+                    <div class="product-content">
+                      <h4 class="product-cate">Diorama & Figure</h4>
+                      <a
+                        href="#"
+                        title="(Pre order) MiniGT Card Mỹ Mercedes-Benz..."
+                        class="product-title"
+                        >(Pre order) MiniGT Card Mỹ Mercedes-Benz...</a
+                      >
+                      <p class="product-price">
+                        <span class="current">299,000đ</span>
+                        <span class="origin">449,000đ</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-1.png"
+                        alt="(Pre order) MiniGT Card Mỹ Mercedes-Benz..."
+                        title="(Pre order) MiniGT Card Mỹ Mercedes-Benz..."
+                      />
+                      <button class="product-wishlist">
+                        <img
+                          src="assets/images/product-wishlist.svg"
+                          alt="wishlist"
+                          title="wishlist"
+                        />
+                      </button>
+                      <button class="product-quickview">Quick View</button>
+                    </div>
+                    <div class="product-content">
+                      <h4 class="product-cate">Diorama & Figure</h4>
+                      <a
+                        href="#"
+                        title="(Pre order) MiniGT Card Mỹ Mercedes-Benz..."
+                        class="product-title"
+                        >(Pre order) MiniGT Card Mỹ Mercedes-Benz...</a
+                      >
+                      <p class="product-price">
+                        <span class="current">299,000đ</span>
+                        <span class="origin">449,000đ</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-1.png"
+                        alt="(Pre order) MiniGT Card Mỹ Mercedes-Benz..."
+                        title="(Pre order) MiniGT Card Mỹ Mercedes-Benz..."
+                      />
+                      <button class="product-wishlist">
+                        <img
+                          src="assets/images/product-wishlist.svg"
+                          alt="wishlist"
+                          title="wishlist"
+                        />
+                      </button>
+                      <button class="product-quickview">Quick View</button>
+                    </div>
+                    <div class="product-content">
+                      <h4 class="product-cate">Diorama & Figure</h4>
+                      <a
+                        href="#"
+                        title="(Pre order) MiniGT Card Mỹ Mercedes-Benz..."
+                        class="product-title"
+                        >(Pre order) MiniGT Card Mỹ Mercedes-Benz...</a
+                      >
+                      <p class="product-price">
+                        <span class="current">299,000đ</span>
+                        <span class="origin">449,000đ</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-1.png"
+                        alt="(Pre order) MiniGT Card Mỹ Mercedes-Benz..."
+                        title="(Pre order) MiniGT Card Mỹ Mercedes-Benz..."
+                      />
+                      <button class="product-wishlist">
+                        <img
+                          src="assets/images/product-wishlist.svg"
+                          alt="wishlist"
+                          title="wishlist"
+                        />
+                      </button>
+                      <button class="product-quickview">Quick View</button>
+                    </div>
+                    <div class="product-content">
+                      <h4 class="product-cate">Diorama & Figure</h4>
+                      <a
+                        href="#"
+                        title="(Pre order) MiniGT Card Mỹ Mercedes-Benz..."
+                        class="product-title"
+                        >(Pre order) MiniGT Card Mỹ Mercedes-Benz...</a
+                      >
+                      <p class="product-price">
+                        <span class="current">299,000đ</span>
+                        <span class="origin">449,000đ</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-1.png"
+                        alt="(Pre order) MiniGT Card Mỹ Mercedes-Benz..."
+                        title="(Pre order) MiniGT Card Mỹ Mercedes-Benz..."
+                      />
+                      <button class="product-wishlist">
+                        <img
+                          src="assets/images/product-wishlist.svg"
+                          alt="wishlist"
+                          title="wishlist"
+                        />
+                      </button>
+                      <button class="product-quickview">Quick View</button>
+                    </div>
+                    <div class="product-content">
+                      <h4 class="product-cate">Diorama & Figure</h4>
+                      <a
+                        href="#"
+                        title="(Pre order) MiniGT Card Mỹ Mercedes-Benz..."
+                        class="product-title"
+                        >(Pre order) MiniGT Card Mỹ Mercedes-Benz...</a
+                      >
+                      <p class="product-price">
+                        <span class="current">299,000đ</span>
+                        <span class="origin">449,000đ</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="product-img">
+                      <img
+                        src="assets/images/product-1.png"
+                        alt="(Pre order) MiniGT Card Mỹ Mercedes-Benz..."
+                        title="(Pre order) MiniGT Card Mỹ Mercedes-Benz..."
+                      />
+                      <button class="product-wishlist">
+                        <img
+                          src="assets/images/product-wishlist.svg"
+                          alt="wishlist"
+                          title="wishlist"
+                        />
+                      </button>
+                      <button class="product-quickview">Quick View</button>
+                    </div>
+                    <div class="product-content">
+                      <h4 class="product-cate">Diorama & Figure</h4>
+                      <a
+                        href="#"
+                        title="(Pre order) MiniGT Card Mỹ Mercedes-Benz..."
+                        class="product-title"
+                        >(Pre order) MiniGT Card Mỹ Mercedes-Benz...</a
+                      >
+                      <p class="product-price">
+                        <span class="current">299,000đ</span>
+                        <span class="origin">449,000đ</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-button-prev product-slider-prev recently-slider-prev"
+          >
+            <svg
+              width="11"
+              height="17"
+              viewBox="0 0 11 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M10.5 1L1.5 8.65L10.5 16.3" stroke="#B5B5B5" />
+            </svg>
+          </div>
+          <div
+            class="swiper-button-next product-slider-next recently-slider-next"
+          >
+            <svg
+              width="11"
+              height="17"
+              viewBox="0 0 11 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M1 1L10 8.65L1 16.3" stroke="#B5B5B5" />
+            </svg>
+          </div>
+        </div>
+      </section>
+      <!-- END RECENTLY -->
+
+      <!-- START COUPON -->
+      <section class="coupon">
+        <div class="coupon-bg">
+          <img src="assets/images/coupon-bg.png" alt="bg" />
+        </div>
+        <div class="container heading-container">
+          <div class="heading">
+            <h3>Coupon Discount</h3>
+            <h2>Get 20% Discount today to better life!</h2>
+            <p>
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old.
+            </p>
+          </div>
+          <a href="#" title="Get Coupon" class="main-btn main-btn-black">
+            <span class="main-btn-wrap">
+              <span class="main-btn-text">
+                <span>Get Coupon</span><span>Get Coupon</span>
+              </span>
+            </span>
+          </a>
+        </div>
+      </section>
+      <!-- END COUPON -->
+    </main>
+
+    <!-- START FOOTER -->
+    <footer class="footer bg-black">
+      <div class="footer-bg">
+        <img src="assets/images/footer-bg.png" alt="bg" />
+      </div>
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <img
+              src="assets/images/logo.png"
+              alt="saigontoys"
+              title="saigontoys"
+            />
+          </div>
+          <div class="footer-top-row">
+            <div class="footer-top-group">
+              <h3>Join Our Group on</h3>
+              <div class="footer-top-el">
+                <div class="footer-top-icon">
+                  <img
+                    src="assets/images/footer-zalo.png"
+                    alt="Zalo Channel"
+                    title="Zalo Channel"
+                  />
+                </div>
+                <a href="#" title="Zalo Channel">Zalo Channel</a>
+              </div>
+              <div class="footer-top-el">
+                <div class="footer-top-icon">
+                  <img
+                    src="assets/images/footer-tele.png"
+                    alt="Telegram Channel"
+                    title="Telegram Channel"
+                  />
+                </div>
+                <a href="#" title="Telegram Channel">Telegram Channel</a>
+              </div>
+            </div>
+            <div class="language language-footer">
+              <div class="language-icon">
+                <img src="assets/images/flag.png" alt="EN" title="EN" />
+              </div>
+              <select name="lang">
+                <option value="United State">United State</option>
+                <option value="Vietnam">Vietnam</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="footer-main">
+          <div class="footer-el">
+            <h3>Contact Us</h3>
+            <ul class="footer-el-list">
+              <li>
+                <div class="footer-el-row">
+                  <div class="footer-el-icon">
+                    <img
+                      src="assets/images/footer-el-icon-1.svg"
+                      alt="phone"
+                      title="phone"
+                    />
+                  </div>
+                  <p>1120 Trường Sa, Phường 13, Quận Phú Nhuận, HCM City</p>
+                </div>
+                <div class="footer-el-row">
+                  <div class="footer-el-icon">
+                    <img
+                      src="assets/images/footer-el-icon-1.svg"
+                      alt="phone"
+                      title="phone"
+                    />
+                  </div>
+                  <p>
+                    Phone:
+                    <a href="tel:+84961691523" title="+84 961 691 523"
+                      >+84 961 691 523</a
+                    >
+                  </p>
+                </div>
+                <div class="footer-el-row">
+                  <div class="footer-el-icon">
+                    <img
+                      src="assets/images/footer-el-icon-2.svg"
+                      alt="phone"
+                      title="phone"
+                    />
+                  </div>
+                  <p>
+                    <a
+                      href="mailto:support@saigontoys.com.vn"
+                      title="support@saigontoys.com.vn"
+                      >support@saigontoys.com.vn</a
+                    >
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-el footer-el-nav">
+            <h3>Information</h3>
+            <ul class="footer-el-list">
+              <li><a href="#" title="About Us">About Us</a></li>
+              <li><a href="#" title="Investors">Investors</a></li>
+              <li>
+                <a href="#" title="Guides & Articles">Guides & Articles</a>
+              </li>
+              <li><a href="#" title="Customer Reviews">Customer Reviews</a></li>
+              <li><a href="#" title="Coupon Codes">Coupon Codes</a></li>
+              <li><a href="#" title="In the News">In the News</a></li>
+            </ul>
+          </div>
+          <div class="footer-el footer-el-nav">
+            <h3>Customer Service</h3>
+            <ul class="footer-el-list">
+              <li><a href="#" title="Help Center">Help Center</a></li>
+              <li><a href="#" title="My Account">My Account</a></li>
+              <li><a href="#" title="Track My Order">Track My Order</a></li>
+              <li><a href="#" title="Return Policy">Return Policy</a></li>
+              <li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+              <li><a href="#" title="Gift Cards">Gift Cards</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <div class="footer-el">
+              <h3>Follow Us on</h3>
+              <div class="footer-social">
+                <a href="#" title="facebook"
+                  ><img
+                    src="assets/images/footer-fb.svg"
+                    alt="facebook"
+                    title="facebook" /></a
+                ><a href="#" title="twitter"
+                  ><img
+                    src="assets/images/footer-tw.svg"
+                    alt="twitter"
+                    title="twitter" /></a
+                ><a href="#" title="instagram"
+                  ><img
+                    src="assets/images/footer-ig.svg"
+                    alt="instagram"
+                    title="instagram"
+                /></a>
+              </div>
+            </div>
+            <div class="footer-el">
+              <h3>Find us on Google Maps</h3>
+              <div class="footer-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.302382229325!2d106.66828637457506!3d10.788136658978555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed4873917f9%3A0x66aebe776a05588a!2zMTEyMCDEkC4gVHLGsOG7nW5nIFNhLCBQaMaw4budbmcgMTMsIFF14bqtbiAzLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1708501113877!5m2!1svi!2s"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="footer-nav">
+          <li><a href="#" title="">Toys & Accessories</a></li>
+          <li><a href="#" title="">Toys & Accessories</a></li>
+          <li><a href="#" title="">Toys & Accessories</a></li>
+          <li><a href="#" title="">Toys & Accessories</a></li>
+          <li><a href="#" title="">Toys & Accessories</a></li>
+          <li><a href="#" title="">Toys & Accessories</a></li>
+          <li><a href="#" title="">Toys & Accessories</a></li>
+        </ul>
+        <div class="footer-bottom">
+          <p>2024 © Copyright of SaiGon Toys. All Right Reserved.</p>
+          <div class="footer-policy">
+            <a href="#" title="Terms & Conditions">Terms & Conditions</a>
+            <a href="#" title="Privacy Policy">Privacy Policy</a>
+            <a href="#" title="Cookies">Cookies</a>
+            <a href="#" title="Legal Privacy">Legal Privacy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- SCRIPT -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

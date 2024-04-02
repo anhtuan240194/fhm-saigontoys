@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- START PAYMENT -->
+      <setion class="payment">
+        <div class="bg-half"></div>
+        <div class="container payment-container">
+          <div class="payment-process">
+            <a href="homepage.html" class="payment-logo" title=""
+              ><img src="assets/images/payment-logo.png" alt="logo" title="" />
+            </a>
+            <ul class="payment-breadcrumb">
+              <li>Shopping Cart</li>
+              <li>Information</li>
+              <li class="active">Payment</li>
+            </ul>
+            <h1>Payment</h1>
+            <form class="payment-method">
+              <div class="payment-method-radio">
+                <label>
+                  <span class="check-icon"></span>
+                  <p>ATM Card/Credit Card</p>
+                  <img
+                    src="assets/images/payment-1.png"
+                    alt="ATM Card/Credit Card"
+                  />
+                  <input
+                    type="radio"
+                    name="payment
+                  _method"
+                    value="card"
+                  />
+                </label>
+                <label>
+                  <span class="check-icon"></span>
+                  <p>Momo</p>
+                  <img src="assets/images/payment-2.png" alt="Momo" />
+                  <input
+                    type="radio"
+                    name="payment
+                  _method"
+                    value="Momo"
+                  />
+                </label>
+                <label>
+                  <span class="check-icon"></span>
+                  <p>ZaloPay</p>
+                  <img src="assets/images/payment-3.png" alt="ZaloPay" />
+                  <input
+                    type="radio"
+                    name="payment
+                  _method"
+                    value="ZaloPay"
+                  />
+                </label>
+                <label>
+                  <span class="check-icon"></span>
+                  <p>VNPAY</p>
+                  <img src="assets/images/payment-4.png" alt="VNPAY" />
+                  <input
+                    type="radio"
+                    name="payment
+                  _method"
+                    value="VNPAY"
+                  />
+                </label>
+              </div>
+              <button type="submit" class="main-btn">Payment</button>
+            </form>
+          </div>
+          <div class="payment-side">
+            <div class="payment-cart">
+              <div class="payment-product">
+                <div class="payment-product-img">
+                  <img
+                    src="assets/images/payment-product.png"
+                    alt="Pagani Huayra Roadster Blue Francia"
+                    title="Pagani Huayra Roadster Blue Francia"
+                  />
+                  <span class="payment-product-count">1</span>
+                </div>
+                <div class="payment-product-col">
+                  <a
+                    href="#"
+                    title="Pagani Huayra Roadster Blue Francia"
+                    class="payment-product-title"
+                    >Pagani Huayra Roadster Blue Francia</a
+                  >
+                  <p class="payment-product-des">
+                    Storage case, 21 ¾x19 ¼x7 ½ "
+                  </p>
+                </div>
+                <div class="payment-product-price">
+                  <span class="current">349,000đ</span>
+                  <span class="origin"> 449,000đ </span>
+                </div>
+              </div>
+              <div class="payment-product">
+                <div class="payment-product-img">
+                  <img
+                    src="assets/images/payment-product.png"
+                    alt="Pagani Huayra Roadster Blue Francia"
+                    title="Pagani Huayra Roadster Blue Francia"
+                  />
+                  <span class="payment-product-count">1</span>
+                </div>
+                <div class="payment-product-col">
+                  <a
+                    href="#"
+                    title="Pagani Huayra Roadster Blue Francia"
+                    class="payment-product-title"
+                    >Pagani Huayra Roadster Blue Francia</a
+                  >
+                  <p class="payment-product-des">
+                    Storage case, 21 ¾x19 ¼x7 ½ "
+                  </p>
+                </div>
+                <div class="payment-product-price">
+                  <span class="current">349,000đ</span>
+                  <span class="origin"> 449,000đ </span>
+                </div>
+              </div>
+            </div>
+            <div class="payment-order">
+              <h2>Your order</h2>
+              <table>
+                <tbody>
+                  <tr>
+                    <th>Total ( 2 items)</th>
+                    <td>698.000đ</td>
+                  </tr>
+                  <tr>
+                    <th>Discounts</th>
+                    <td>
+                      <span
+                        ><svg
+                          width="12"
+                          height="12"
+                          viewBox="0 0 12 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g clip-path="url(#clip0_457_14195)">
+                            <path
+                              d="M0.00109554 3.31C0.00109554 2.62637 -0.0020032 1.94246 0.00222235 1.25883C0.00588449 0.632381 0.368155 0.163953 0.948746 0.0326913C1.06171 0.00734038 1.18115 0.00367858 1.29749 0.0033969C2.63249 0.00142516 3.9672 0.00565032 5.30219 1.67803e-05C5.69376 -0.00167328 6.0118 0.124236 6.29266 0.406758C8.0488 2.17428 9.81395 3.93307 11.5757 5.69524C11.989 6.10846 12.1093 6.58309 11.8969 7.04616C11.8264 7.19996 11.7222 7.34784 11.6028 7.46812C10.2295 8.85002 8.85081 10.2271 7.47159 11.6034C6.94339 12.1304 6.25547 12.1333 5.72728 11.6062C3.92043 9.80322 2.11612 7.99767 0.311814 6.19212C0.129834 6.00988 0.0165892 5.78707 0.0140539 5.52962C0.0061662 4.78993 0.0112369 4.04997 0.0112369 3.31C0.00785642 3.31 0.00447598 3.31 0.00109554 3.31ZM2.99532 2.10809C2.99701 1.59346 2.61699 1.20982 2.10429 1.20728C1.59497 1.20503 1.20566 1.59403 1.20707 2.10414C1.20819 2.61032 1.58962 2.99396 2.09331 2.99593C2.60939 2.9979 2.99391 2.61933 2.9956 2.10809H2.99532Z"
+                              fill="#C60808"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_457_14195">
+                              <rect width="12" height="12" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </span>
+                      (-)
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Shipping fee</th>
+                    <td>50.000đ</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>Total</th>
+                    <td>748.000đ</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+      </setion>
+      <!-- END PAYMENT -->
+    </main>
+
+    <!-- SCRIPT -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

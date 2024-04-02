@@ -1,0 +1,165 @@
+@font-face {
+  font-family: "manrope";
+  src: url("../fonts/Manrope/Manrope-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "manrope";
+  src: url("../fonts/Manrope/Manrope-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "manrope";
+  src: url("../fonts/Manrope/Manrope-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "manrope";
+  src: url("../fonts/Manrope/Manrope-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "manrope";
+  src: url("../fonts/Manrope/Manrope-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+:root {
+  --font-manrope: manrope, sans-serif;
+  --font-poppins: poppins, sans-serif;
+  --clr-bg: #ececec;
+  --clr-dark: #050505;
+  --clr-main: #022d24;
+  --clr-primary: #ecf107;
+  --clr-secondary: #121212;
+  --clr-border: #ededed;
+}
+
+$font-main: var(--font-manrope);
+$font-poppins: var(--font-poppins);
+
+$bg-main: var(--clr-bg);
+$clr-dark: var(--clr-dark);
+
+$clr-main: var(--clr-main);
+$clr-primary: var(--clr-primary);
+$clr-secondary: var(--clr-secondary);
+$clr-border: var(--clr-border);
+
+// ANIMATION
+@keyframes updown2 {
+  from {
+    transform: translateY(7%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes updown3 {
+  from {
+    transform: translateX(0%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+}
+
+// START BREAKPOINT VARIABLES
+@mixin extra-desktop {
+  @media (max-width: 1440.98px) {
+    @content;
+  }
+}
+
+@mixin large-desktop {
+  @media only screen and (max-width: 1399.98px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (max-width: 1199.98px) {
+    @content;
+  }
+}
+
+@mixin small-desktop {
+  @media only screen and (max-width: 1023.98px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width: 991.98px) {
+    @content;
+  }
+}
+
+@mixin landscape-phone {
+  @media only screen and (max-width: 767.98px) {
+    @content;
+  }
+}
+
+@mixin extra-mobile {
+  @media only screen and (max-width: 576.98px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media only screen and (max-width: 480.98px) {
+    @content;
+  }
+}
+
+@mixin small-mobile {
+  @media only screen and (max-width: 391.98px) {
+    @content;
+  }
+}
+// END BREAKPOINT VARIABLES
+
+// calc((100% - 1400px) / 2);
+// calc((100% - 1296px) / 2);
+// calc((100% - 1116px) / 2);
+// calc((100% - 936px) / 2);
+// calc((100% - 699px) / 2);
+// calc((100% - 519px) / 2);
+
+@mixin flex($align-items: start, $justify-content: start) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+// WIDTH CONTAINER VARIABLES
+body {
+  --width-container: 1160px;
+  @include desktop {
+    --width-container: 936px;
+  }
+  @include tablet {
+    --width-container: 699px;
+  }
+  @include landscape-phone {
+    --width-container: 519px;
+  }
+  @include extra-mobile {
+    --width-container: 100%;
+  }
+}

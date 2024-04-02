@@ -1,0 +1,133 @@
+.account {
+  margin-top: 6.25rem;
+  margin-bottom: 17rem;
+}
+.account-container {
+  @include flex(start, space-between);
+  gap: 30px;
+}
+.account-nav-item {
+  margin-bottom: 30px;
+}
+.account-nav-link {
+  font-weight: 400;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.account-main {
+  font-weight: 800;
+  width: 77.33%;
+  h1 {
+    font-size: 2rem;
+    padding-bottom: 17px;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 2.5625rem;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 35px;
+      height: 3px;
+      background: black;
+    }
+  }
+}
+.account-row {
+  @include flex;
+  padding: 16px 0;
+  border-bottom: 1px solid #ededed;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+.account-col {
+  p {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.625;
+  }
+  &:first-child {
+    width: 25%;
+    flex-shrink: 0;
+    p {
+      font-weight: 400;
+    }
+  }
+  &:nth-child(2) {
+    width: 100%;
+  }
+}
+.account-group {
+  margin-bottom: 3.3125rem;
+  h2 {
+    font-weight: 800;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  &:first-child {
+    .account-row {
+      border: 0;
+    }
+  }
+  &:last-child {
+    h2 {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+.account-update {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #0f737b;
+}
+.account-avatar {
+  width: 100%;
+  max-width: 117px;
+  aspect-ratio: 1;
+  height: fit-content;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.account-intro {
+  p {
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  .main-btn {
+    font-weight: 600;
+    padding: 12px 30px;
+    font-size: 14px;
+    color: white;
+    background: #cc010c;
+    border: none;
+    text-transform: capitalize;
+    letter-spacing: 0.1em;
+  }
+}
+
+@include tablet {
+  .account {
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+  }
+  .account-container {
+    flex-direction: column;
+  }
+  .account-nav {
+    @include flex(center, center);
+    width: 100%;
+    gap: 2rem;
+  }
+  .account-nav-item {
+    margin-bottom: 0;
+  }
+  .account-main {
+    width: 100%;
+  }
+}
