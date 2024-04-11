@@ -6072,3 +6072,82 @@ img {
     width: 12px;
   }
 }
+.my-order {
+  margin-bottom: 133px;
+}
+.my-order .order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.my-order .order-item:not(:last-child) {
+  margin-bottom: 43px;
+  padding-bottom: 43px;
+  border-bottom: 1px solid #EDEDED;
+}
+.my-order .order-item .order-image {
+  flex: 0 0 148px;
+  max-width: 148px;
+}
+.my-order .order-item .order-info {
+  flex: 1;
+}
+.my-order .order-item .order-name {
+  font-size: 16px;
+  font-weight: 800px;
+  line-height: 1.3em;
+  color: #272727;
+  margin-bottom: 5px;
+}
+.my-order .order-item .order-total {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3em;
+}
+.my-order .order-item .order-date {
+  color: #616161;
+  font-size: 14px;
+  line-height: 1.5em;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+.my-order .order-item .order-status {
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  border-radius: 400px 20px 400px 400px;
+  border: 1px solid #00A307;
+  color: #00A307;
+  text-transform: uppercase;
+}
+.my-order .order-item .order-status.in-progress {
+  color: #DD0202;
+  border: 1px solid #DD0202;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .my-order .order-item {
+    flex-wrap: wrap;
+    gap: 12px 30px;
+    justify-content: flex-end;
+  }
+  .my-order .order-item .order-info {
+    flex: 0 0 calc(100% - 148px - 30px);
+    max-width: calc(100% - 148px - 30px);
+  }
+}
+@media only screen and (max-width: 391.98px) {
+  .my-order .order-item {
+    justify-content: flex-start;
+  }
+  .my-order .order-item .order-image {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .my-order .order-item .order-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

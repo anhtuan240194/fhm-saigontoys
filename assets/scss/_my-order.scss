@@ -1,0 +1,96 @@
+.my-order {
+    margin-bottom: 133px;
+
+    .order-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+
+        &:not(:last-child) {
+            margin-bottom: 43px;
+            padding-bottom: 43px;
+            border-bottom: 1px solid #EDEDED;
+        }
+
+        .order-image {
+            flex: 0 0 148px;
+            max-width: 148px;
+        }
+
+        .order-info {
+            flex: 1;
+        }
+
+        .order-name {
+            font-size: 16px;
+            font-weight: 800px;
+            line-height: 1.3em;
+            color: #272727;
+            margin-bottom: 5px;
+        }
+
+        .order-total {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.3em;
+        }
+
+        .order-date {
+            color: #616161;
+            font-size: 14px;
+            line-height: 1.5em;
+            font-weight: 400;
+            margin-bottom: 14px;
+        }
+
+        .order-status {
+            padding: 10px 20px;
+            font-weight: 700;
+            font-size: 12px;
+            letter-spacing: 0.1em;
+            border-radius: 400px 20px 400px 400px;
+            border: 1px solid #00A307;
+            color: #00A307;
+            text-transform: uppercase;
+
+            &.in-progress {
+                color: #DD0202;
+                border: 1px solid #DD0202;
+            }
+        }
+    }
+}
+
+@include landscape-phone {
+    .my-order {
+        .order-item {
+            flex-wrap: wrap;
+            gap: 12px 30px;
+    justify-content: flex-end;
+
+            .order-info{
+                flex: 0 0 calc(100% - 148px - 30px);
+                max-width: calc(100% - 148px - 30px);
+            }
+        }
+    }
+}
+
+@include small-mobile {
+    .my-order {
+        .order-item {
+            justify-content: flex-start;
+            
+            .order-image {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+
+            .order-info {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
